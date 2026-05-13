@@ -24,8 +24,7 @@ html {
 body {
     font-family: 'Inter', system-ui, sans-serif;
     color: var(--text);
-    background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
-    background-attachment: fixed;
+    background: var(--background);
     line-height: 1.6;
     font-size: 16px;
     padding-top: 80px;
@@ -168,7 +167,7 @@ nav.scrolled {
     justify-content: center;
     text-align: center;
     padding: 80px 40px 40px;
-    background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
+    background: #FFFFFF;
     position: relative;
 }
 
@@ -177,7 +176,7 @@ nav.scrolled {
     display: flex;
     align-items: center;
     padding: 80px 40px 40px;
-    background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
+    background: #FFFFFF;
 }
 
 .hero-content-wrapper {
@@ -193,8 +192,8 @@ nav.scrolled {
 .hero-image-container {
     position: relative;
     overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(92, 48, 16, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     aspect-ratio: 3/4;
 }
 
@@ -313,13 +312,14 @@ nav.scrolled {
 
 /* About Section */
 #about {
-    padding: 60px 40px;
+    padding: 100px 40px;
+    background: #FFFFFF;
 }
 
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -330,24 +330,23 @@ nav.scrolled {
 }
 
 .about-highlight {
-    background: white;
+    background: #FAFAF8;
     border-left: 4px solid var(--primary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(92, 48, 16, 0.05);
+    padding: 40px;
+    border-radius: 0;
 }
 
 /* Impact Stats */
 #impact {
-    padding: 60px 40px;
-    background: white;
+    padding: 100px 40px;
+    background: #FFFFFF;
 }
 
 .impact-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    gap: 50px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -372,34 +371,56 @@ nav.scrolled {
 }
 
 @media (max-width: 768px) {
+    #about {
+        padding: 80px 20px;
+    }
+
+    #impact {
+        padding: 80px 20px;
+    }
+
+    #how-it-works {
+        padding: 80px 20px;
+    }
+
+    #programs {
+        padding: 80px 20px;
+    }
+
+    #testimonials {
+        padding: 80px 20px;
+    }
+
     .about-container {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .impact-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
 
 /* How It Works Section */
 #how-it-works {
-    padding: 60px 40px;
+    padding: 100px 40px;
+    background: #FAFAF8;
 }
 
 .steps-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .step-card {
     background: white;
     border-left: 4px solid var(--primary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(92, 48, 16, 0.05);
+    padding: 40px;
+    border-radius: 0;
     text-align: center;
 }
 
@@ -419,29 +440,28 @@ nav.scrolled {
 
 /* Programs Section */
 #programs {
-    padding: 60px 40px;
-    background: white;
+    padding: 100px 40px;
+    background: #FFFFFF;
 }
 
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .program-card {
-    background: var(--section-alt);
+    background: #FAFAF8;
     border-left: 4px solid var(--primary);
-    padding: 25px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 40px;
+    border-radius: 0;
+    transition: background 0.3s ease;
 }
 
 .program-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(92, 48, 16, 0.15);
+    background: #F5F5F3;
 }
 
 .program-name {
@@ -458,24 +478,25 @@ nav.scrolled {
 
 /* Testimonials Section */
 #testimonials {
-    padding: 60px 40px;
+    padding: 100px 40px;
+    background: #FAFAF8;
 }
 
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .testimonial-card {
-    background-color: var(--background);
-    border: 2px dashed var(--secondary);
-    padding: 25px;
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    border-left: 4px solid var(--primary);
+    padding: 40px;
+    border-radius: 0;
     text-align: center;
-    min-height: 180px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,8 +518,8 @@ nav.scrolled {
 
 /* CTA Section */
 #cta {
-    padding: 60px 40px;
-    background: linear-gradient(135deg, var(--accent) 0%, #3A1A04 100%);
+    padding: 100px 40px;
+    background: var(--accent);
     color: white;
     text-align: center;
 }
@@ -532,7 +553,7 @@ nav.scrolled {
 footer {
     background: var(--accent);
     color: white;
-    padding: 40px;
+    padding: 60px 40px;
     text-align: center;
 }
 
