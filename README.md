@@ -115,20 +115,41 @@ mahadaanwebsite/
 
 ## How to Use
 
+### Quick Start
+- **View the Gallery**: Open `gallery.html` to see a mockup showcase with the featured design and planned alternatives
+- **View the Main Site**: Open `index.html` to see the complete Mahadaan website wireframe
+- **View Documentation**: Check `docs/` folder for project details and SEO guidelines
+
 ### Local Development
-No build step required — simply open `index.html` in your browser:
+No build step required — simply open any HTML file in your browser:
 
 ```bash
 # Option 1: Direct file open
-open index.html
+open gallery.html          # View mockup gallery
+open index.html            # View main website
 
 # Option 2: Using a local server (Python)
 python -m http.server 8000
-# Then visit: http://localhost:8000
+# Then visit: http://localhost:8000/gallery.html
 
 # Option 3: Using Node http-server
 npx http-server
+# Then visit: http://localhost:8080/gallery.html
 ```
+
+### Gallery vs. Main Site
+
+**`gallery.html`** — Mockup Showcase
+- Featured mockup with design details and color palette
+- Planned alternative theme variations
+- Documentation resources (Mahadaan project, EEAT guidelines, README)
+- Similar structure to the Antar Yog Foundation mockup gallery
+
+**`index.html`** — Complete Website
+- Full Mahadaan initiative website with 9 sections
+- Live interactive features (nav, animations, smooth scroll)
+- Responsive design tested on mobile/tablet/desktop
+- Production-ready wireframe
 
 ### Live Testing
 - Test on desktop (1920px), tablet (768px), and mobile (375px)
