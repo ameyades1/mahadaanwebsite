@@ -44,7 +44,8 @@ The site features:
 
 ```
 mahadaanwebsite/
-├── index.html                          # Main wireframe page (9 sections)
+├── index.html                          # Gallery/Mockup showcase (root entry point)
+├── mockup1.html                        # Main website wireframe (9 sections)
 ├── README.md                           # This file
 ├── css/
 │   ├── styles.css                      # Custom styles, component patterns
@@ -116,8 +117,8 @@ mahadaanwebsite/
 ## How to Use
 
 ### Quick Start
-- **View the Gallery**: Open `gallery.html` to see a mockup showcase with the featured design and planned alternatives
-- **View the Main Site**: Open `index.html` to see the complete Mahadaan website wireframe
+- **View the Gallery**: Open `index.html` (root) to see a mockup showcase with the featured design and planned alternatives
+- **View the Main Site**: Open `mockup1.html` to see the complete Mahadaan website wireframe
 - **View Documentation**: Check `docs/` folder for project details and SEO guidelines
 
 ### Local Development
@@ -125,27 +126,30 @@ No build step required — simply open any HTML file in your browser:
 
 ```bash
 # Option 1: Direct file open
-open gallery.html          # View mockup gallery
-open index.html            # View main website
+open index.html            # View mockup gallery (root entry point)
+open mockup1.html          # View main website
 
 # Option 2: Using a local server (Python)
 python -m http.server 8000
-# Then visit: http://localhost:8000/gallery.html
+# Then visit: http://localhost:8000/ (gallery)
+#             http://localhost:8000/mockup1.html (main site)
 
 # Option 3: Using Node http-server
 npx http-server
-# Then visit: http://localhost:8080/gallery.html
+# Then visit: http://localhost:8080/ (gallery)
+#             http://localhost:8080/mockup1.html (main site)
 ```
 
-### Gallery vs. Main Site
+### File Organization
 
-**`gallery.html`** — Mockup Showcase
-- Featured mockup with design details and color palette
-- Planned alternative theme variations
+**`index.html`** — Root/Gallery Entry Point
+- Mockup showcase with featured design and alternatives
+- Design details and color palette display
+- Planned theme variations (Suvarna, Earth Tones, Dark Sacred)
 - Documentation resources (Mahadaan project, EEAT guidelines, README)
 - Similar structure to the Antar Yog Foundation mockup gallery
 
-**`index.html`** — Complete Website
+**`mockup1.html`** — Complete Website Mockup
 - Full Mahadaan initiative website with 9 sections
 - Live interactive features (nav, animations, smooth scroll)
 - Responsive design tested on mobile/tablet/desktop
