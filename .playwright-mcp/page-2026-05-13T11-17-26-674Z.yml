@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - text: Antaryog Foundation
+      - generic [ref=e4]: "| Mahadaan"
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "About" [ref=e7] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e8]:
+        - link "Impact" [ref=e9] [cursor=pointer]:
+          - /url: "#impact"
+      - listitem [ref=e10]:
+        - link "How It Works" [ref=e11] [cursor=pointer]:
+          - /url: "#how-it-works"
+      - listitem [ref=e12]:
+        - link "Programs" [ref=e13] [cursor=pointer]:
+          - /url: "#programs"
+      - listitem [ref=e14]:
+        - link "Donate" [ref=e15] [cursor=pointer]:
+          - /url: "#cta"
+          - strong [ref=e16]: Donate
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - generic [ref=e20]: A Sacred Initiative
+      - 'heading "Mahadaan: The Gift of Transformation" [level=1] [ref=e21]'
+      - paragraph [ref=e22]: Join the Antaryog Foundation in supporting spiritual education, wellness programs, and community transformation through the sacred practice of giving.
+      - generic [ref=e23]:
+        - button "Donate Now" [ref=e24] [cursor=pointer]
+        - button "Learn More" [ref=e25] [cursor=pointer]
+    - generic [ref=e26]:
+      - generic [ref=e27]: "1"
+      - heading "About Mahadaan" [level=2] [ref=e28]
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: Mahadaan—meaning "the great gift" in Sanskrit—is Antaryog Foundation's transformative initiative to support spiritual seekers and wellness practitioners on their journey of growth and self-discovery.
+          - paragraph [ref=e32]: Every contribution, regardless of size, fuels programs that bring ancient yogic wisdom into modern practice, creating lasting impact across our global community.
+          - paragraph [ref=e33]: "Your donation directly supports:"
+          - list [ref=e34]:
+            - listitem [ref=e35]: Yoga and meditation teacher training
+            - listitem [ref=e36]: Wellness retreats and shibirs
+            - listitem [ref=e37]: Accessible programs for underserved communities
+            - listitem [ref=e38]: Research in traditional healing practices
+        - generic [ref=e39]:
+          - heading "Our Mission" [level=3] [ref=e40]
+          - paragraph [ref=e41]: To serve as a bridge between ancient spiritual traditions and contemporary wellness needs, empowering individuals and communities to achieve balance, health, and transformation through authentic yogic practices.
+    - generic [ref=e42]:
+      - generic [ref=e43]: "2"
+      - heading "Our Impact" [level=2] [ref=e44]
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: 25000+
+          - generic [ref=e48]: Lives Touched
+        - generic [ref=e49]:
+          - generic [ref=e50]: 120+
+          - generic [ref=e51]: Programs Supported
+        - generic [ref=e52]:
+          - generic [ref=e53]: "15"
+          - generic [ref=e54]: Years of Service
+        - generic [ref=e55]:
+          - generic [ref=e56]: 500+
+          - generic [ref=e57]: Volunteers Worldwide
+    - generic [ref=e58]:
+      - generic [ref=e59]: "3"
+      - heading "How Mahadaan Works" [level=2] [ref=e60]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]: "1"
+          - heading "Choose a Program" [level=3] [ref=e64]
+          - paragraph [ref=e65]: Select from wellness, yoga, meditation, or community transformation programs that resonate with your values.
+        - generic [ref=e66]:
+          - generic [ref=e67]: "2"
+          - heading "Give Generously" [level=3] [ref=e68]
+          - paragraph [ref=e69]: Make a one-time donation or become a sustaining member of our community of support.
+        - generic [ref=e70]:
+          - generic [ref=e71]: "3"
+          - heading "Transform Lives" [level=3] [ref=e72]
+          - paragraph [ref=e73]: "Your gift enables direct impact: training, retreats, accessibility initiatives, and global reach."
+    - generic [ref=e74]:
+      - generic [ref=e75]: "4"
+      - heading "Programs Supported by Mahadaan" [level=2] [ref=e76]
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e79]: Yoga Teacher Training
+          - paragraph [ref=e80]: Comprehensive 200-hour and advanced certifications for aspiring yoga instructors and wellness facilitators.
+        - generic [ref=e81]:
+          - generic [ref=e82]: Wellness Retreats
+          - paragraph [ref=e83]: Immersive shibirs and retreats combining yoga, meditation, pranayama, and holistic wellness practices.
+        - generic [ref=e84]:
+          - generic [ref=e85]: Community Access
+          - paragraph [ref=e86]: Scholarships and subsidized programs for underserved communities and low-income participants.
+        - generic [ref=e87]:
+          - generic [ref=e88]: Research Initiatives
+          - paragraph [ref=e89]: Studies on the effectiveness of traditional practices and their integration with modern wellness.
+        - generic [ref=e90]:
+          - generic [ref=e91]: Mentorship Programs
+          - paragraph [ref=e92]: One-on-one guidance and group mentoring with experienced spiritual teachers and wellness practitioners.
+        - generic [ref=e93]:
+          - generic [ref=e94]: Online Learning
+          - paragraph [ref=e95]: Accessible courses, webinars, and digital resources bringing Antaryog's wisdom to global audiences.
+    - generic [ref=e96]:
+      - generic [ref=e97]: "5"
+      - heading "Stories of Transformation" [level=2] [ref=e98]
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: "\"Antaryog's programs completely transformed my understanding of wellness. The teachers are genuinely dedicated to student growth.\""
+          - generic [ref=e102]: — Priya S., Yoga Teacher
+        - generic [ref=e103]:
+          - generic [ref=e104]: "\"The scholarship made it possible for me to complete my training. I'm now teaching in my community and giving back just like they did.\""
+          - generic [ref=e105]: — Rajesh M., Community Leader
+        - generic [ref=e106]:
+          - generic [ref=e107]: "\"I was skeptical of traditional practices until I attended an Antaryog retreat. The integration of science and spirituality is remarkable.\""
+          - generic [ref=e108]: — Dr. Anjali P., Wellness Researcher
+    - generic [ref=e110]:
+      - heading "Begin Your Mahadaan Today" [level=2] [ref=e111]
+      - paragraph [ref=e112]: Make a meaningful gift that transforms lives. Your support powers spiritual education, wellness, and community transformation worldwide.
+      - button "Donate & Make an Impact" [ref=e113] [cursor=pointer]
+  - contentinfo [ref=e114]:
+    - generic [ref=e115]:
+      - link "About" [ref=e116] [cursor=pointer]:
+        - /url: "#about"
+      - link "Programs" [ref=e117] [cursor=pointer]:
+        - /url: "#programs"
+      - link "Documentation" [ref=e118] [cursor=pointer]:
+        - /url: docs/google-eeat-guidelines.md
+      - link "Contact" [ref=e119] [cursor=pointer]:
+        - /url: mailto:contact@antaryog.org
+    - paragraph [ref=e120]:
+      - text: Antaryog Foundation | Mahadaan Initiative
+      - text: Building spiritual wellness globally
+      - text: © 2026 Antaryog Foundation. All rights reserved.

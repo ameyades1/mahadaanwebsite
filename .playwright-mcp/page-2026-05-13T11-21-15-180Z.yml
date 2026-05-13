@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Mahadaan" [ref=e4] [cursor=pointer]:
+        - /url: gallery.html
+      - generic [ref=e5]: Website Mockups
+      - link "View Main Site →" [ref=e6] [cursor=pointer]:
+        - /url: index.html
+  - generic [ref=e7]:
+    - generic [ref=e8]: 🪔 A Sacred Initiative
+    - 'heading "Mahadaan: The Gift of Transformation" [level=1] [ref=e9]':
+      - text: "Mahadaan: The"
+      - emphasis [ref=e10]: Gift of Transformation
+    - paragraph [ref=e11]: Wireframe mockups for the Antaryog Foundation's Mahadaan campaign — a platform for spiritual giving, donation pathways, and community impact.
+  - generic [ref=e13]: ✦ Featured Mockup
+  - link "Mahadaan Mockup – Main website preview ✦ Featured Mahadaan Initiative Sacred Giving Platform A complete wireframe for the Antaryog Foundation's Mahadaan (sacred giving) campaign. The site features 9 responsive sections showcasing donation pathways, spiritual impact, and transformation stories. Built with the v7 theme palette — copper and gold accents on warm cream backgrounds. Fully responsive from mobile (375px) to desktop (1920px) with smooth scroll interactions and animated statistics. Copper Gold Cream Dark Brown v7 Palette View Live Site →" [ref=e16] [cursor=pointer]:
+    - /url: index.html
+    - generic [ref=e17]:
+      - img "Mahadaan Mockup – Main website preview" [ref=e18]
+      - generic [ref=e19]: ✦ Featured
+    - generic [ref=e20]:
+      - heading "Mahadaan Initiative" [level=2] [ref=e21]
+      - generic [ref=e22]: Sacred Giving Platform
+      - generic [ref=e23]:
+        - paragraph [ref=e24]: A complete wireframe for the Antaryog Foundation's Mahadaan (sacred giving) campaign. The site features 9 responsive sections showcasing donation pathways, spiritual impact, and transformation stories.
+        - paragraph [ref=e25]: Built with the v7 theme palette — copper and gold accents on warm cream backgrounds. Fully responsive from mobile (375px) to desktop (1920px) with smooth scroll interactions and animated statistics.
+      - generic [ref=e26]:
+        - generic "Copper" [ref=e27]
+        - generic "Gold" [ref=e28]
+        - generic "Cream" [ref=e29]
+        - generic "Dark Brown" [ref=e30]
+        - generic [ref=e31]: v7 Palette
+      - button "View Live Site →" [ref=e32]:
+        - text: View Live Site
+        - generic [ref=e33]: →
+  - generic [ref=e34]:
+    - heading "Alternative Designs Planned Variations" [level=3] [ref=e35]:
+      - text: Alternative Designs
+      - generic [ref=e36]: Planned Variations
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: 🎨
+          - generic [ref=e41]: Coming Soon
+        - generic [ref=e42]:
+          - generic [ref=e43]: Gold · Warm
+          - generic [ref=e44]: Suvarna Theme
+          - paragraph [ref=e45]: Enhanced gold and ivory theme emphasizing wealth and prosperity. Suvarna means "golden" in Sanskrit.
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: 🎨
+          - generic [ref=e49]: Coming Soon
+        - generic [ref=e50]:
+          - generic [ref=e51]: Earth · Grounded
+          - generic [ref=e52]: Earth Tones Variation
+          - paragraph [ref=e53]: Grounded earth palette with terracotta and sage, emphasizing natural connection and growth.
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: 🎨
+          - generic [ref=e57]: Coming Soon
+        - generic [ref=e58]:
+          - generic [ref=e59]: Dark · Sacred
+          - generic [ref=e60]: Dark Sacred Theme
+          - paragraph [ref=e61]: Deep indigo background with gold accents, creating a more contemplative and spiritual ambiance.
+  - generic [ref=e62]:
+    - heading "Resources Documentation & Guides" [level=3] [ref=e63]:
+      - text: Resources
+      - generic [ref=e64]: Documentation & Guides
+    - generic [ref=e65]:
+      - link "📄 Documentation Mahadaan Project Complete project overview with all 10 donation categories, scriptural context, and spiritual framework. Read Document →" [ref=e66] [cursor=pointer]:
+        - /url: docs/antaryog-mahadaan-project.md
+        - generic [ref=e68]: 📄
+        - generic [ref=e69]:
+          - generic [ref=e70]: Documentation
+          - generic [ref=e71]: Mahadaan Project
+          - paragraph [ref=e72]: Complete project overview with all 10 donation categories, scriptural context, and spiritual framework.
+          - generic [ref=e73]:
+            - text: Read Document
+            - generic [ref=e74]: →
+      - link "📋 SEO Guide EEAT Guidelines Google Search Quality Rater guidelines for Experience, Expertise, Authoritativeness, and Trustworthiness. Read Guide →" [ref=e75] [cursor=pointer]:
+        - /url: docs/google-eeat-guidelines.md
+        - generic [ref=e77]: 📋
+        - generic [ref=e78]:
+          - generic [ref=e79]: SEO Guide
+          - generic [ref=e80]: EEAT Guidelines
+          - paragraph [ref=e81]: Google Search Quality Rater guidelines for Experience, Expertise, Authoritativeness, and Trustworthiness.
+          - generic [ref=e82]:
+            - text: Read Guide
+            - generic [ref=e83]: →
+      - link "📖 Setup Project README Complete technical documentation including setup instructions, customization, and deployment guidance. Read README →" [ref=e84] [cursor=pointer]:
+        - /url: README.md
+        - generic [ref=e86]: 📖
+        - generic [ref=e87]:
+          - generic [ref=e88]: Setup
+          - generic [ref=e89]: Project README
+          - paragraph [ref=e90]: Complete technical documentation including setup instructions, customization, and deployment guidance.
+          - generic [ref=e91]:
+            - text: Read README
+            - generic [ref=e92]: →
+  - contentinfo [ref=e93]:
+    - generic [ref=e94]:
+      - paragraph [ref=e95]: © 2026 Antaryog Foundation · Mahadaan Website Mockup Gallery
+      - paragraph [ref=e96]: Designed with 🪔 for sacred giving
