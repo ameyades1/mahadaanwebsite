@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahadaan Website Mockups — Antaryog Foundation</title>
+    <meta name="description" content="Explore different design variations of the Mahadaan initiative website. View mockups of the sacred giving campaign for Antaryog Foundation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --copper:   #B87333;
+            --copper-dark: #8B5A2B;
+            --gold:     #E8B84B;
+            --gold-light: #F5DBA8;
+            --cream:    #F9F6F0;
+            --parchment: #FDFBF8;
+            --ink:      #5C3010;
+            --ink-soft: #7A6858;
+            --ink-muted: #9A8A7A;
+            --white-warm: #FDFBF7;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--cream);
+            color: var(--ink);
+            margin: 0;
+        }
+
+        /* ── Grain overlay ─────────────────────────── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0.5;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            letter-spacing: -0.01em;
+        }
+
+        /* ── Header ────────────────────────────────── */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--white-warm);
+            border-bottom: 2px solid var(--copper);
+            backdrop-filter: blur(8px);
+        }
+
+        .header-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--copper);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .header-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--copper);
+            background: rgba(184,115,51,0.1);
+            border: 1px solid rgba(184,115,51,0.25);
+            padding: 0.3rem 0.85rem;
+            border-radius: 2rem;
+            margin-left: 1rem;
+        }
+
+        .header-frontend-link {
+            margin-left: auto;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--copper);
+            text-decoration: none;
+            border: 1.5px solid var(--copper);
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .header-frontend-link:hover {
+            background: var(--copper);
+            color: var(--white-warm);
+        }
+
+        /* ── Hero text ─────────────────────────────── */
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2.5rem;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .hero-eyebrow::before {
+            content: '🪔';
+            font-size: 1rem;
+        }
+
+        .hero-headline {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 300;
+            line-height: 1.12;
+            color: var(--ink);
+            margin: 0 0 1rem;
+            max-width: 600px;
+        }
+
+        .hero-headline em {
+            font-style: italic;
+            color: var(--copper);
+            font-weight: 400;
+        }
+
+        .hero-sub {
+            font-size: 1.1rem;
+            line-height: 1.75;
+            color: var(--ink-soft);
+            max-width: 540px;
+            margin: 0;
+        }
+
+        /* ── Section label ─────────────────────────── */
+        .section-label {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-label-text {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--copper);
+            white-space: nowrap;
+        }
+
+        .section-label-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, var(--copper), transparent);
+        }
+
+        /* ── Featured Mockup ───────────────────────── */
+        .featured-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        .showcase-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(184,115,51,0.2);
+            background: var(--white-warm);
+            box-shadow:
+                0 2px 4px rgba(92,48,16,0.04),
+                0 8px 32px rgba(92,48,16,0.07),
+                0 32px 64px rgba(92,48,16,0.06);
+            text-decoration: none;
+            color: inherit;
+            transition: box-shadow 0.4s ease, transform 0.4s ease;
+        }
+
+        .showcase-card:hover {
+            box-shadow:
+                0 4px 8px rgba(92,48,16,0.05),
+                0 16px 48px rgba(92,48,16,0.12),
+                0 48px 96px rgba(92,48,16,0.10);
+            transform: translateY(-3px);
+        }
+
+        /* Top: thumbnail */
+        .card-thumb {
+            position: relative;
+            overflow: hidden;
+            background: var(--parchment);
+            aspect-ratio: 1600 / 900;
+        }
+
+        .card-thumb img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .card-thumb::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 60%, rgba(253,251,247,0.3) 100%);
+            pointer-events: none;
+        }
+
+        .showcase-card:hover .card-thumb img {
+            transform: scale(1.04);
+        }
+
+        /* Badge overlay */
+        .selected-badge {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(249,251,247,0.95);
+            color: var(--copper-dark);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.45rem 0.9rem;
+            border-radius: 4px;
+            border: 1px solid rgba(184,115,51,0.4);
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 12px rgba(92,48,16,0.15);
+        }
+
+        .selected-badge::before {
+            content: '✦';
+            font-size: 0.8rem;
+            color: var(--copper);
+        }
+
+        /* Bottom: text panel */
+        .card-panel {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 3.5rem;
+            border-top: 1px solid rgba(184,115,51,0.12);
+            background: linear-gradient(160deg, var(--white-warm) 0%, #FEFAF7 100%);
+        }
+
+        .panel-eyebrow {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .panel-eyebrow::before {
+            content: '◆';
+            font-size: 0.5rem;
+        }
+
+        .panel-title {
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 1.15;
+            color: var(--ink);
+            margin: 0 0 0.5rem;
+        }
+
+        .panel-subtitle {
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--copper);
+            font-family: 'Cormorant Garamond', serif;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(184,115,51,0.15);
+        }
+
+        .panel-body {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            color: var(--ink-soft);
+            flex: 1;
+        }
+
+        .panel-body p + p {
+            margin-top: 1rem;
+        }
+
+        .color-swatches {
+            display: flex;
+            gap: 0.5rem;
+            margin: 2rem 0;
+            align-items: center;
+        }
+
+        .swatch {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(255,255,255,0.6);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .swatch-label {
+            font-size: 0.7rem;
+            color: var(--ink-muted);
+            letter-spacing: 0.05em;
+            margin-left: 0.5rem;
+        }
+
+        .panel-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 2.5rem;
+            padding: 0.9rem 2rem;
+            background: var(--copper);
+            color: var(--white-warm);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, gap 0.2s ease;
+            align-self: flex-start;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .showcase-card:hover .panel-cta {
+            background: var(--copper-dark);
+            gap: 1.1rem;
+        }
+
+        /* ── Alternatives Grid ─────────────────────── */
+        .alts-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+
+        .alts-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--ink-soft);
+            margin-bottom: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(184,115,51,0.12);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .alts-heading span {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .alts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        .alt-card {
+            background: var(--white-warm);
+            border: 1px solid rgba(184,115,51,0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .alt-card:hover {
+            box-shadow: 0 8px 32px rgba(92,48,16,0.1);
+            transform: translateY(-2px);
+        }
+
+        .alt-thumb {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: var(--parchment);
+            position: relative;
+        }
+
+        .alt-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.4s ease;
+        }
+
+        .alt-card:hover .alt-thumb img {
+            transform: scale(1.05);
+        }
+
+        .alt-thumb-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--ink-muted);
+            opacity: 0.3;
+        }
+
+        .alt-body {
+            padding: 1.25rem 1.5rem 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .alt-badge {
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.6rem;
+            border-radius: 3px;
+            margin-bottom: 0.75rem;
+            align-self: flex-start;
+            background: rgba(184,115,51,0.1);
+            color: var(--copper-dark);
+            border: 1px solid rgba(184,115,51,0.2);
+        }
+
+        .alt-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+        }
+
+        .alt-desc {
+            font-size: 0.8rem;
+            line-height: 1.6;
+            color: var(--ink-muted);
+            flex: 1;
+        }
+
+        .alt-link {
+            margin-top: 1.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--copper);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* Coming Soon State */
+        .coming-soon-banner {
+            position: absolute;
+            inset: 0;
+            background: rgba(92,48,16,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white-warm);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+            padding: 1rem;
+            backdrop-filter: blur(2px);
+            z-index: 10;
+        }
+
+        .alt-card.coming-soon:hover {
+            transform: none;
+        }
+
+        /* ── Footer ────────────────────────────────── */
+        .site-footer {
+            background: var(--ink);
+            color: rgba(253,251,247,0.6);
+            padding: 2.5rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-text {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── Responsive ────────────────────────────– */
+        @media (max-width: 1024px) {
+            .card-panel { padding: 2rem 2rem; }
+            .panel-title { font-size: 1.8rem; }
+            .alts-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 640px) {
+            .header-inner { padding: 0 1.25rem; }
+            .hero { padding: 2rem 1.25rem 1.5rem; }
+            .featured-section, .alts-section, .section-label { padding-left: 1.25rem; padding-right: 1.25rem; }
+            .card-panel { padding: 1.75rem 1.5rem; }
+            .alts-grid { grid-template-columns: 1fr; }
+            .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                Mahadaan
+            </a>
+            <span class="header-tag">Website Mockups</span>
+            <a href="mockup1.html" class="header-frontend-link">View Main Site →</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-eyebrow">A Sacred Initiative</div>
+        <h1 class="hero-headline">
+            Mahadaan: The <em>Gift of Transformation</em>
+        </h1>
+        <p class="hero-sub">
+            Wireframe mockups for the Antaryog Foundation's Mahadaan campaign — a platform for spiritual giving, donation pathways, and community impact.
+        </p>
+    </div>
+
+    <!-- Featured Design -->
+    <div class="section-label">
+        <span class="section-label-text">✦ Featured Mockup</span>
+        <div class="section-label-line"></div>
+    </div>
+
+    <div class="featured-section">
+        <a href="mockup1.html" class="showcase-card">
+            <div class="card-thumb">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Crect fill='%23F9F6F0' width='1600' height='900'/%3E%3Crect fill='%23FDFBF8' y='300' width='1600' height='600'/%3E%3Crect fill='%235C3010' width='1600' height='80'/%3E%3Ccircle cx='184' cy='40' r='20' fill='%23B87333'/%3E%3Crect x='400' y='150' width='800' height='100' fill='%23B87333' opacity='0.1' rx='8'/%3E%3Crect x='200' y='350' width='300' height='200' fill='%23F9F6F0' stroke='%23B87333' stroke-width='2' rx='12'/%3E%3Crect x='600' y='350' width='300' height='200' fill='%23F9F6F0' stroke='%23B87333' stroke-width='2' rx='12'/%3E%3Crect x='1000' y='350' width='300' height='200' fill='%23F9F6F0' stroke='%23B87333' stroke-width='2' rx='12'/%3E%3Crect x='200' y='650' width='1200' height='150' fill='%235C3010'/%3E%3C/svg%3E"
+                     alt="Mahadaan Mockup – Main website preview">
+                <div class="selected-badge">Featured</div>
+            </div>
+            <div class="card-panel">
+                <h2 class="panel-title">Mahadaan Initiative</h2>
+                <div class="panel-subtitle">Sacred Giving Platform</div>
+
+                <div class="panel-body">
+                    <p>
+                        A complete wireframe for the Antaryog Foundation's Mahadaan (sacred giving) campaign. The site features 9 responsive sections showcasing donation pathways, spiritual impact, and transformation stories.
+                    </p>
+                    <p>
+                        Built with the v7 theme palette — copper and gold accents on warm cream backgrounds. Fully responsive from mobile (375px) to desktop (1920px) with smooth scroll interactions and animated statistics.
+                    </p>
+                </div>
+
+                <div class="color-swatches">
+                    <div class="swatch" style="background:#B87333;" title="Copper"></div>
+                    <div class="swatch" style="background:#E8B84B;" title="Gold"></div>
+                    <div class="swatch" style="background:#F9F6F0;" title="Cream"></div>
+                    <div class="swatch" style="background:#5C3010;" title="Dark Brown"></div>
+                    <span class="swatch-label">v7 Palette</span>
+                </div>
+
+                <button class="panel-cta">
+                    View Live Site <span>→</span>
+                </button>
+            </div>
+        </a>
+    </div>
+
+    <!-- Alternative Mockups -->
+    <div class="alts-section">
+        <h3 class="alts-heading">
+            Alternative Designs &nbsp;
+            <span>More Variations</span>
+        </h3>
+
+        <div class="alts-grid">
+
+            <a href="mockup2.html" class="alt-card">
+                <div class="alt-thumb">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 800'%3E%3Crect fill='%23f5f5f5' width='1600' height='800'/%3E%3Crect fill='%23333' width='1600' height='80'/%3E%3Crect x='100' y='150' width='400' height='500' fill='%23ddd' rx='8'/%3E%3Crect x='600' y='150' width='400' height='500' fill='%23ddd' rx='8'/%3E%3Crect x='1100' y='150' width='400' height='500' fill='%23ddd' rx='8'/%3E%3C/svg%3E" alt="Mockup 2 - Alternative Design">
+                </div>
+                <div class="alt-body">
+                    <span class="alt-badge">Cinzel · Cards</span>
+                    <div class="alt-title">Swapnil Theme</div>
+                    <p class="alt-desc">Image-based card grid design with elegant typography. Showcases donation categories with visual appeal and direct navigation.</p>
+                    <div class="alt-link">View Design <span>→</span></div>
+                </div>
+            </a>
+
+            <div class="alt-card coming-soon">
+                <div class="alt-thumb">
+                    <div class="alt-thumb-placeholder">🎨</div>
+                    <div class="coming-soon-banner">Coming Soon</div>
+                </div>
+                <div class="alt-body">
+                    <span class="alt-badge">Earth · Grounded</span>
+                    <div class="alt-title">Earth Tones Variation</div>
+                    <p class="alt-desc">Grounded earth palette with terracotta and sage, emphasizing natural connection and growth.</p>
+                </div>
+            </div>
+
+            <div class="alt-card coming-soon">
+                <div class="alt-thumb">
+                    <div class="alt-thumb-placeholder">🎨</div>
+                    <div class="coming-soon-banner">Coming Soon</div>
+                </div>
+                <div class="alt-body">
+                    <span class="alt-badge">Dark · Sacred</span>
+                    <div class="alt-title">Dark Sacred Theme</div>
+                    <p class="alt-desc">Deep indigo background with gold accents, creating a more contemplative and spiritual ambiance.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Documentation -->
+    <div class="alts-section" style="margin-top: 2rem;">
+        <h3 class="alts-heading">
+            Resources &nbsp;
+            <span>Documentation & Guides</span>
+        </h3>
+
+        <div class="alts-grid">
+
+            <a href="docs/antaryog-mahadaan-project.md" class="alt-card" target="_blank">
+                <div class="alt-thumb">
+                    <div class="alt-thumb-placeholder">📄</div>
+                </div>
+                <div class="alt-body">
+                    <span class="alt-badge">Documentation</span>
+                    <div class="alt-title">Mahadaan Project</div>
+                    <p class="alt-desc">Complete project overview with all 10 donation categories, scriptural context, and spiritual framework.</p>
+                    <div class="alt-link">Read Document <span>→</span></div>
+                </div>
+            </a>
+
+            <a href="docs/google-eeat-guidelines.md" class="alt-card" target="_blank">
+                <div class="alt-thumb">
+                    <div class="alt-thumb-placeholder">📋</div>
+                </div>
+                <div class="alt-body">
+                    <span class="alt-badge">SEO Guide</span>
+                    <div class="alt-title">EEAT Guidelines</div>
+                    <p class="alt-desc">Google Search Quality Rater guidelines for Experience, Expertise, Authoritativeness, and Trustworthiness.</p>
+                    <div class="alt-link">Read Guide <span>→</span></div>
+                </div>
+            </a>
+
+            <a href="README.md" class="alt-card" target="_blank">
+                <div class="alt-thumb">
+                    <div class="alt-thumb-placeholder">📖</div>
+                </div>
+                <div class="alt-body">
+                    <span class="alt-badge">Setup</span>
+                    <div class="alt-title">Project README</div>
+                    <p class="alt-desc">Complete technical documentation including setup instructions, customization, and deployment guidance.</p>
+                    <div class="alt-link">Read README <span>→</span></div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2026 Antaryog Foundation · Mahadaan Website Mockup Gallery</p>
+            <p class="footer-text">Designed with 🪔 for sacred giving</p>
+        </div>
+    </footer>
+
+</body>
+</html>
