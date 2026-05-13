@@ -1,0 +1,427 @@
+/* ── BIO SECTION LAYOUT ── */
+.bio-section {
+    padding: 5rem 1.5rem;
+    position: relative;
+}
+
+.bio-section--cream {
+    background: linear-gradient(135deg, #FBF7EE 0%, rgba(249,246,240,0.8) 50%, rgba(232,184,75,0.02) 100%);
+}
+
+.bio-section--white {
+    background: #FFFFFF;
+}
+
+.bio-section__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bio-section--content-left .bio-section__image {
+    order: 2;
+}
+
+.bio-section--content-left .bio-section__content {
+    order: 1;
+}
+
+@media (max-width: 767px) {
+    .bio-section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .bio-section__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1.5rem;
+        row-gap: 1.25rem;
+    }
+
+    .chapter-title {
+        order: 0;
+    }
+
+    .bio-section__content {
+        order: 1;
+    }
+
+    .bio-section__image {
+        order: 2;
+    }
+}
+
+.acharya-title {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5C3010;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.acharya-honorific {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B87333;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+    opacity: 0.9;
+}
+
+.acharya-tagline {
+    font-size: 1.15rem;
+    color: #6B5244;
+    font-style: italic;
+    margin-top: 1.5rem;
+    line-height: 1.65;
+    font-weight: 300;
+    max-width: 85%;
+    text-align: justify;
+}
+
+.acharya-tagline strong {
+    font-weight: 700;
+    font-style: normal;
+    color: #5C3010;
+}
+
+.acharya-divider {
+    width: 60px;
+    height: 2px;
+    background: #B87333;
+    border-radius: 1px;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+/* ── IMAGE & PORTRAIT COLUMN ── */
+.bio-section__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-portrait-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+}
+
+.bio-portrait-wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(92,48,16,0.16);
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.bio-portrait-bg {
+    position: absolute;
+    inset: -20px -20px 20px 20px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, rgba(184,115,51,0.1) 0%, rgba(232,184,75,0.05) 100%);
+    z-index: 1;
+    border: 1px solid rgba(184,115,51,0.08);
+}
+
+/* ── DECORATIVE PANELS ── */
+.bio-panel {
+    position: relative;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+.bio-panel--dark {
+    background: linear-gradient(135deg, #5C3010 0%, #6B3E2E 100%);
+    color: #FBF7EE;
+}
+
+.bio-panel--light {
+    background: #FBF7EE;
+    border: 1.5px solid rgba(184,115,51,0.3);
+}
+
+.bio-stat-number {
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #E8B84B;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.bio-stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(251,247,238,0.7);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.bio-panel--dark .bio-stat-label {
+    color: rgba(251,247,238,0.7);
+}
+
+.bio-panel--light .bio-stat-label {
+    color: #B87333;
+}
+
+.bio-programs-list {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(232,184,75,0.2);
+    text-align: left;
+}
+
+.bio-programs-list li {
+    list-style: none;
+}
+
+.bio-programs-list li::before {
+    content: '▪ ';
+    color: #E8B84B;
+    margin-right: 0.5rem;
+}
+
+/* ── Sanskrit quote ── */
+.sanskrit-block {
+    background: transparent;
+    border-left: 2px solid #B87333;
+    border-radius: 0;
+    padding: 1.5rem 0 1.5rem 1.75rem;
+    margin: 2rem 0;
+}
+
+.sanskrit-text {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: #B87333;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.sanskrit-translation {
+    font-size: 0.95rem;
+    color: #7A6858;
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+/* ── CONTENT COLUMN ── */
+.bio-section__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B87333;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.chapter-title {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5C3010;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.3px;
+    grid-column: 1 / -1;
+}
+
+.bio-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #5A4A40;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.bio-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* ── ENTREPRENEUR SECTION ── */
+.entrepreneur-hero {
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.entrepreneur-container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.entrepreneur-content {
+    color: #5C3010;
+}
+
+.entrepreneur-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #6B5244;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    max-width: 480px;
+    text-align: justify;
+}
+
+.entrepreneur-desc {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5A4A40;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.entrepreneur-image-wrapper {
+    position: relative;
+}
+
+.entrepreneur-image {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(92,48,16,0.12);
+    display: block;
+    position: relative;
+}
+
+.entrepreneur-frame {
+    position: relative;
+}
+
+.entrepreneur-frame::before {
+    content: '';
+    position: absolute;
+    inset: -20px -20px 20px 20px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, rgba(184,115,51,0.1) 0%, rgba(232,184,75,0.05) 100%);
+    z-index: 1;
+    border: 1px solid rgba(184,115,51,0.08);
+}
+
+@media (max-width: 968px) {
+    .entrepreneur-container {
+        grid-template-columns: 1fr;
+        padding: 3.5rem 1.25rem;
+        gap: 2.5rem;
+    }
+
+    .entrepreneur-content {
+        order: 0;
+    }
+
+    .entrepreneur-image-wrapper {
+        order: 2;
+    }
+
+    .entrepreneur-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* ── DISCOURSE GRID ── */
+.discourse-btn {
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, rgba(184,115,51,0.08) 0%, rgba(232,184,75,0.04) 100%);
+    border: 2px solid #B87333;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5C3010;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 300ms ease;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.discourse-btn:hover {
+    background: linear-gradient(135deg, rgba(184,115,51,0.15) 0%, rgba(232,184,75,0.1) 100%);
+    border-color: #A0632A;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(92,48,16,0.15);
+    color: #5C3010;
+}
+
+.discourse-btn:active {
+    transform: translateY(-1px);
+}
+
+.discourse-btn:visited {
+    color: #5C3010;
+}
+
+/* ── Animations ── */
+.fade-in {
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+.fade-in-2 {
+    animation-delay: 0.2s;
+}
+
+.fade-in-3 {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .discourse-btn {
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+        min-height: 100px;
+    }
+}
