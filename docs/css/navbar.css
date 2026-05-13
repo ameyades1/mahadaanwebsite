@@ -1,0 +1,280 @@
+/* ═══════════════════════════════════════════
+   NAVBAR
+   ═══════════════════════════════════════════ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    color: #5C3010;
+    letter-spacing: 0.01em;
+    transition: color 150ms;
+}
+
+.nav-link:hover {
+    color: #B87333;
+}
+
+/* Dropdown navigation */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-panel::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 8px;
+}
+
+.nav-dropdown-panel {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%) scaleY(0.94);
+    transform-origin: top center;
+    background: #FBF7F0;
+    border: 1px solid rgba(184, 115, 51, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(92, 48, 16, 0.10), 0 2px 8px rgba(92, 48, 16, 0.06);
+    min-width: 290px;
+    padding: 8px 0;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 180ms ease, transform 180ms ease;
+    pointer-events: none;
+}
+
+.nav-dropdown:hover .nav-dropdown-panel,
+.nav-dropdown.open .nav-dropdown-panel {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1);
+    pointer-events: auto;
+}
+
+.nav-dropdown-panel a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.9375rem;
+    color: #5C3010;
+    white-space: nowrap;
+    transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+    border-left: 3px solid transparent;
+    position: relative;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-dropdown-panel a:first-of-type { border-radius: 7px 7px 0 0; }
+.nav-dropdown-panel a:last-of-type  { border-radius: 0 0 7px 7px; }
+
+.nav-dropdown-panel a:hover {
+    background: #F4EDE3;
+    color: #B87333;
+    border-left-color: #B87333;
+}
+
+/* Mobile menu — drawer panel animation */
+#mobile-menu-panel {
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#mobile-menu-backdrop {
+    transition: opacity 300ms ease-in-out;
+}
+
+/* Mobile nav flat links */
+.mobile-nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5C3010;
+    border-radius: 8px;
+    transition: background 150ms, color 150ms;
+}
+
+.mobile-nav-link:hover {
+    background: #F9F6F0;
+    color: #B87333;
+}
+
+/* Accordion trigger button */
+.mobile-accordion-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5C3010;
+    border-radius: 8px;
+    transition: background 150ms, color 150ms;
+}
+
+.mobile-accordion-btn:hover {
+    background: #F9F6F0;
+    color: #B87333;
+}
+
+/* Accordion panel (sub-links) */
+.mobile-accordion-content {
+    display: none;
+    padding-left: 1rem;
+}
+
+.mobile-accordion-content.open {
+    display: block;
+}
+
+/* Accordion sub-links */
+.mobile-sub-link {
+    display: block;
+    padding: 0.625rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: #7A6858;
+    border-radius: 8px;
+    transition: background 150ms, color 150ms;
+}
+
+.mobile-sub-link:hover {
+    background: #F9F6F0;
+    color: #B87333;
+}
+
+/* Chevron icon */
+.mobile-accordion-chevron {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.6;
+    transition: transform 200ms ease;
+    flex-shrink: 0;
+}
+
+.mobile-accordion-chevron.open {
+    transform: rotate(180deg);
+}
+
+/* Submenu cascading */
+.nav-submenu-item {
+    position: relative;
+}
+
+.nav-submenu-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.9375rem;
+    color: #5C3010;
+    background: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 150ms ease;
+    border-left: 3px solid transparent;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+.nav-submenu-trigger:hover,
+.nav-submenu-item:hover .nav-submenu-trigger {
+    background: #F4EDE3;
+    color: #B87333;
+    border-left-color: #B87333;
+}
+
+.nav-submenu-trigger::after {
+    content: '';
+    display: inline-block;
+    border: solid #B87333;
+    border-width: 0 1.5px 1.5px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: auto;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.nav-submenu-panel {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 4px);
+    background: #FBF7F0;
+    border: 1px solid rgba(184, 115, 51, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(92, 48, 16, 0.10), 0 2px 8px rgba(92, 48, 16, 0.06);
+    min-width: 210px;
+    padding: 8px 0;
+    z-index: 101;
+}
+
+.nav-submenu-item:hover > .nav-submenu-panel {
+    display: block;
+}
+
+.nav-submenu-trigger:hover + .nav-submenu-panel,
+.nav-submenu-panel:hover {
+    display: block;
+}
+
+.nav-submenu-panel a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.9375rem;
+    color: #5C3010;
+    white-space: nowrap;
+    transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+    border-left: 3px solid transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-submenu-panel a:first-of-type { border-radius: 7px 7px 0 0; }
+.nav-submenu-panel a:last-of-type  { border-radius: 0 0 7px 7px; }
+
+.nav-submenu-panel a:hover {
+    background: #F4EDE3;
+    color: #B87333;
+    border-left-color: #B87333;
+}
+
+.nav-divider {
+    border-top: 1px solid rgba(184, 115, 51, 0.15);
+    margin: 8px 0;
+}
+
+/* ═══════════════════════════════════════════
+   MOBILE CATEGORY LABELS
+   ═══════════════════════════════════════════ */
+
+.mobile-category-label {
+    display: block;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #B87333;
+    padding: 8px 12px 2px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 6px;
+}
+
+.mobile-sub-link--indented {
+    padding-left: 20px;
+}
