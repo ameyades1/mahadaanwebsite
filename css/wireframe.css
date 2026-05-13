@@ -1,0 +1,150 @@
+/* Wireframe Styles for Mahadaan Website — Adapted from v7 Theme */
+
+:root {
+    --primary: #B87333;
+    --secondary: #E8B84B;
+    --accent: #5C3010;
+    --background: #F9F6F0;
+    --text-primary: #2D2D2D;
+    --text-secondary: #6B6B6B;
+}
+
+/* Container */
+.wireframe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Base Section Styling */
+.wireframe-section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.wireframe-section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.wireframe-section-title {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
+}
+
+.wireframe-section-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Grid Styles */
+.wireframe-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.wireframe-grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Card Styling */
+.wireframe-card {
+    background-color: white;
+    border-left: 4px solid var(--primary);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(92, 48, 16, 0.05);
+}
+
+/* Testimonials */
+.wireframe-testimonial-card {
+    background-color: var(--background);
+    border: 2px dashed var(--secondary);
+    padding: 25px;
+    border-radius: 4px;
+    text-align: center;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wireframe-testimonial-quote {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.wireframe-testimonial-author {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .wireframe-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .wireframe-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .wireframe-section-title {
+        font-size: 18px;
+    }
+
+    .wireframe-section-number {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .wireframe-grid-col-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframe-testimonial-card {
+        min-height: 120px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wireframe-section {
+        padding: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .wireframe-section {
+        page-break-inside: avoid;
+    }
+}
