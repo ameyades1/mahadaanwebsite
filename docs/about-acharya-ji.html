@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Acharya Ji - Mahadaan Initiative</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #B87333;
+            --secondary: #E8B84B;
+            --accent: #5C3010;
+            --background: #F9F6F0;
+            --section-alt: #FDFBF8;
+            --text: #5C3010;
+            --text-secondary: #7A6858;
+            --white: #FFFFFF;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+            background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
+            background-attachment: fixed;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .nav-logo {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Sections */
+        .bio-section {
+            padding: 80px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .bio-section--cream {
+            background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
+        }
+
+        .bio-section--white {
+            background: var(--white);
+        }
+
+        .bio-section__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .bio-section--img-left .bio-section__grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .bio-section--content-left .bio-section__grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .bio-section--content-left .bio-section__image {
+            order: 2;
+        }
+
+        .bio-section--content-left .bio-section__content {
+            order: 1;
+        }
+
+        /* Images */
+        .bio-section__image {
+            position: relative;
+        }
+
+        .bio-portrait-wrapper {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
+        }
+
+        .bio-portrait-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(184, 115, 51, 0.1) 0%, rgba(232, 184, 75, 0.08) 100%);
+        }
+
+        .bio-portrait-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Content */
+        .bio-section__content {
+            padding: 20px 0;
+        }
+
+        .acharya-honorific {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .acharya-title {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .acharya-divider {
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            margin-bottom: 1.5rem;
+        }
+
+        .acharya-tagline {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .sanskrit-block {
+            background: rgba(184, 115, 51, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .sanskrit-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .sanskrit-translation {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .bio-paragraph {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+        }
+
+        .chapter-title {
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 2rem;
+            grid-column: 1 / -1;
+        }
+
+        /* Stats Panel */
+        .bio-panel {
+            background: var(--accent);
+            color: var(--background);
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .bio-stat-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.9;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .bio-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-family: 'Lora', Georgia, serif;
+        }
+
+        .bio-programs-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .bio-programs-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.95;
+        }
+
+        /* Entrepreneur Section */
+        .entrepreneur-hero {
+            background: var(--white);
+            padding: 80px 40px;
+        }
+
+        .entrepreneur-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .entrepreneur-content {
+            order: 1;
+        }
+
+        .entrepreneur-image-wrapper {
+            order: 2;
+            position: relative;
+        }
+
+        .entrepreneur-frame {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, var(--background) 0%, var(--section-alt) 100%);
+        }
+
+        .entrepreneur-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Buttons */
+        .discourse-btn {
+            display: inline-block;
+            padding: 0.85rem 1.75rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .discourse-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(92, 48, 16, 0.25);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--accent);
+            color: var(--background);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: rgba(249, 246, 240, 0.8);
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .fade-in-2 {
+            animation: fadeIn 0.8s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+
+        .fade-in-3 {
+            animation: fadeIn 0.8s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0 20px;
+                height: 60px;
+            }
+
+            body {
+                padding-top: 60px;
+            }
+
+            .bio-section {
+                padding: 40px 20px;
+            }
+
+            .bio-section__grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .entrepreneur-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .chapter-title {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="mockup1.html" class="nav-logo">Mahadaan</a>
+        <ul class="nav-links">
+            <li><a href="mockup1.html#about">About Mahadaan</a></li>
+            <li><a href="mockup1.html#programs">Programs</a></li>
+            <li><a href="about-acharya-ji.html">About Acharya Ji</a></li>
+            <li><a href="mockup1.html#cta">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Row 1: The Master -->
+    <section class="bio-section bio-section--cream fade-in">
+        <div class="bio-section__grid bio-section--img-left">
+            <div class="bio-section__image">
+                <div class="bio-portrait-wrapper">
+                    <div class="bio-portrait-bg"></div>
+                    <img src="assets/acharya-humanitarian.jpg" alt="Acharya Upendra Ji — Jeevan Mukt Sadguru">
+                </div>
+            </div>
+
+            <div class="bio-section__content fade-in-2">
+                <span class="acharya-honorific">Jeevan Mukt Sadguru</span>
+                <h1 class="acharya-title">Acharya Upendra Ji</h1>
+                <div class="acharya-divider"></div>
+                <p class="acharya-tagline">
+                    Acharya Ji is dedicated to transforming the destiny of Bharat. Along with co-founders <strong>Guru Maa Neeta Tai</strong> and <strong>respected Rupa Tai</strong>, he created Antar Yog Foundation with a vision of:
+                </p>
+                <div class="sanskrit-block">
+                    <div class="sanskrit-text">जनहिताय स्वयं मोक्षाय च</div>
+                    <div class="sanskrit-translation">For the welfare of all, and for the liberation of oneself</div>
+                </div>
+                <p class="bio-paragraph">
+                    Since 2005, he is tirelessly working on creating strong, prosperous, and spiritually grounded citizens. He is committed to creating a Bharat that once again rises as a <strong>Vishwa Guru</strong> — a guiding light for the world. Every program, every teaching, every Shibir is one step toward this vision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 2: Creator of Powerful Sadhanas -->
+    <section class="bio-section bio-section--white fade-in fade-in-2">
+        <h2 class="chapter-title">Creator of Powerful Sadhanas</h2>
+        <div class="bio-section__grid bio-section--content-left">
+            <div class="bio-section__image">
+                <div class="bio-portrait-wrapper">
+                    <div class="bio-portrait-bg"></div>
+                    <img src="assets/acharya-humanitarian.jpg" alt="Acharya Upendra Ji teaching Sadhana">
+                </div>
+            </div>
+
+            <div class="bio-section__content">
+                <p class="bio-paragraph">
+                    Acharya Ji empowers each person to change his own destiny with proven techniques. Through years of intense meditation and penance, he has created innovative Sadhanas (spiritual practices).
+                </p>
+                <p class="bio-paragraph">
+                    These powerful tools of self-transformation are delivering instant results to lakhs of seekers — from health and prosperity to peace of mind.
+                </p>
+                <button class="discourse-btn">Learn Sadhanas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 3: The Visionary -->
+    <section class="bio-section bio-section--cream fade-in fade-in-3">
+        <h2 class="chapter-title">The Visionary</h2>
+        <div class="bio-section__grid bio-section--img-left">
+            <div class="bio-section__image">
+                <div class="bio-panel">
+                    <span class="bio-stat-label">Impact Across India</span>
+                    <div class="bio-stat-number">10,000+</div>
+                    <span class="bio-stat-label">Seekers Guided</span>
+                    <ul class="bio-programs-list">
+                        <li>Shibirs (Spiritual Camps)</li>
+                        <li>Discourses & Teachings</li>
+                        <li>Nirjanwas Retreats</li>
+                    </ul>
+                    <span style="display: block; margin-top: 2rem; font-size: 0.9rem; opacity: 0.9;">in 50+ cities</span>
+                </div>
+            </div>
+
+            <div class="bio-section__content">
+                <p class="bio-paragraph">
+                    Acharya Ji founded Antar Yog Foundation to make powerful sadhanas accessible to everyone. Through Shibirs, Discourses, and Nirjanwas retreats, he has personally guided over <strong>10,000 seekers across 50+ cities</strong>.
+                </p>
+                <p class="bio-paragraph">
+                    Acharya Ji is deeply committed to the awakening of women, honoring the <strong>Durga Shakti</strong> — divine feminine power — within every person. He believes that true national transformation begins when both men and women rise as compassionate, self-reliant leaders grounded in inner wisdom.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 4: A Master Healer -->
+    <section class="bio-section bio-section--white fade-in">
+        <h2 class="chapter-title">A Master Healer</h2>
+        <div class="bio-section__grid bio-section--content-left">
+            <div class="bio-section__image">
+                <div class="bio-portrait-wrapper">
+                    <div class="bio-portrait-bg"></div>
+                    <img src="assets/acharya-humanitarian.jpg" alt="Acharya Upendra Ji - Master Healer">
+                </div>
+            </div>
+
+            <div class="bio-section__content">
+                <p class="bio-paragraph">
+                    Acharya Ji's <strong>Science of Healing</strong> goes beyond conventional medicine to reveal the true personal root cause of disease. Illness originates not just in the body but in unresolved karma, energy centres, and imbalanced relationships. Lasting healing requires addressing all three.
+                </p>
+                <p class="bio-paragraph">
+                    Through guided sessions, thousands of seekers have experienced recovery from chronic ailments that conventional treatment could not resolve.
+                </p>
+                <button class="discourse-btn">Science of Healing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 5: A Prolific Author -->
+    <section class="bio-section bio-section--cream fade-in fade-in-3">
+        <h2 class="chapter-title">A Prolific Author</h2>
+        <div class="bio-section__grid bio-section--img-left">
+            <div class="bio-section__image">
+                <div class="bio-portrait-wrapper">
+                    <div class="bio-portrait-bg"></div>
+                    <img src="assets/acharya-humanitarian.jpg" alt="Acharya Upendra Ji - Prolific Author">
+                </div>
+            </div>
+
+            <div class="bio-section__content">
+                <p class="bio-paragraph">
+                    Acharya Ji decodes the symbolic meaning of scriptures, making them useful for everyday life. He has written books on the Puranas, Gitas, and Upanishads to reveal their practical wisdom.
+                </p>
+                <p class="bio-paragraph">
+                    He is a prolific author of <strong>60+ books</strong>, including commentary on 40+ Gitas, Upanishads, Puranas, motivational, business, and finance books.
+                </p>
+                <button class="discourse-btn">Explore Teachings</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 6: An Entrepreneur -->
+    <section class="entrepreneur-hero fade-in fade-in-3">
+        <div class="entrepreneur-container">
+            <div class="entrepreneur-content">
+                <h2 class="chapter-title">An Entrepreneur & Business Mentor</h2>
+                <p class="bio-paragraph">
+                    Beyond spiritual mastery, Acharya Ji is a seasoned entrepreneur and business mentor. He guides aspiring leaders with ethical wealth creation that benefits all stakeholders: employees, customers, and communities.
+                </p>
+                <p class="bio-paragraph">
+                    His unique approach integrates <strong>Vedantic principles with modern business wisdom</strong>, creating sustainable enterprises that serve society while generating prosperity.
+                </p>
+            </div>
+
+            <div class="entrepreneur-image-wrapper">
+                <div class="entrepreneur-frame">
+                    <img src="assets/acharya-humanitarian.jpg" alt="Acharya Upendra Ji mentoring entrepreneurs">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 7: A Compassionate Humanitarian -->
+    <section class="bio-section bio-section--cream fade-in">
+        <h2 class="chapter-title">A Compassionate Humanitarian</h2>
+        <div class="bio-section__grid bio-section--img-left">
+            <div class="bio-section__image">
+                <div class="bio-portrait-wrapper">
+                    <div class="bio-portrait-bg"></div>
+                    <img src="assets/acharya-humanitarian.jpg" alt="Acharya Upendra Ji - Compassionate Humanitarian">
+                </div>
+            </div>
+
+            <div class="bio-section__content">
+                <p class="bio-paragraph">
+                    The foundation regularly organizes <strong>Mahadaan</strong>, a sacred charitable event under Acharya Ji's direction. Acharya Ji teaches the righteous way of giving donations according to our scriptures.
+                </p>
+                <p class="bio-paragraph">
+                    Following this donation process enables seekers to resolve karmic debts from past lives, fostering prosperity. Nine societal groups receive regular support with food and essentials delivered with compassion:
+                </p>
+                <p class="bio-paragraph">
+                    Sanyasis, Brahmans, Children, Orphans, Specially-abled individuals, Married women, Poor citizens, Senior citizens, and Diseased persons.
+                </p>
+                <p class="bio-paragraph">
+                    Acharya Ji emphasizes: <strong>"The world is interested in givers, not takers; so be a giver."</strong> This initiative reflects the organization's commitment to societal welfare grounded in traditional principles.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Antaryog Foundation · Mahadaan Initiative</p>
+        <p><a href="mockup1.html">Back to Main Site</a></p>
+    </footer>
+
+</body>
+</html>
