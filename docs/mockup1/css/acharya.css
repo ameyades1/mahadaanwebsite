@@ -1,0 +1,421 @@
+/* ── BIO SECTION LAYOUT (Clean Editorial Style) ── */
+.bio-section {
+    padding: 120px 2rem;
+    position: relative;
+    background: #FFFFFF;
+}
+
+.bio-section--cream {
+    background: #FFFFFF;
+}
+
+.bio-section--white {
+    background: #FFFFFF;
+}
+
+.bio-section__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 2rem;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.bio-section--content-left .bio-section__image {
+    order: 2;
+}
+
+.bio-section--content-left .bio-section__content {
+    order: 1;
+}
+
+@media (max-width: 767px) {
+    .bio-section {
+        padding: 80px 1.5rem;
+    }
+
+    .bio-section__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 2rem;
+    }
+
+    .chapter-title {
+        order: 0;
+    }
+
+    .bio-section__content {
+        order: 1;
+    }
+
+    .bio-section__image {
+        order: 2;
+    }
+}
+
+.acharya-title {
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.acharya-honorific {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #B87333;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    opacity: 1;
+}
+
+.acharya-tagline {
+    font-size: 1.1rem;
+    color: #555555;
+    font-style: normal;
+    margin-top: 1.5rem;
+    line-height: 1.7;
+    font-weight: 400;
+    max-width: 100%;
+    text-align: left;
+}
+
+.acharya-tagline strong {
+    font-weight: 600;
+    font-style: normal;
+    color: #2D2D2D;
+}
+
+.acharya-divider {
+    display: none;
+}
+
+/* ── IMAGE & PORTRAIT COLUMN ── */
+.bio-section__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-portrait-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+}
+
+.bio-portrait-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.bio-portrait-bg {
+    display: none;
+}
+
+/* ── DECORATIVE PANELS ── */
+.bio-panel {
+    position: relative;
+    border-radius: 0;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+}
+
+.bio-panel--dark {
+    background: #F8F8F8;
+    color: #2D2D2D;
+}
+
+.bio-panel--light {
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+}
+
+.bio-stat-number {
+    font-family: 'Lora', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #B87333;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.bio-stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.bio-panel--dark .bio-stat-label {
+    color: #666666;
+}
+
+.bio-panel--light .bio-stat-label {
+    color: #B87333;
+}
+
+.bio-programs-list {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 2;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #D0D0D0;
+    text-align: left;
+}
+
+.bio-programs-list li {
+    list-style: none;
+    color: #555555;
+}
+
+.bio-programs-list li::before {
+    content: '•';
+    color: #B87333;
+    margin-right: 0.75rem;
+    font-weight: bold;
+}
+
+/* ── Sanskrit quote ── */
+.sanskrit-block {
+    background: transparent;
+    border-left: 3px solid #B87333;
+    border-radius: 0;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    margin: 2rem 0;
+}
+
+.sanskrit-text {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    color: #B87333;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.sanskrit-translation {
+    font-size: 0.95rem;
+    color: #666666;
+    font-style: italic;
+    margin-top: 0.75rem;
+    font-weight: 400;
+}
+
+/* ── CONTENT COLUMN ── */
+.bio-section__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B87333;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.chapter-title {
+    font-family: 'Lora', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin: 0 0 2rem 0;
+    letter-spacing: -0.3px;
+    grid-column: 1 / -1;
+    line-height: 1.3;
+}
+
+.bio-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 1.75rem;
+    text-align: left;
+}
+
+.bio-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.bio-paragraph strong {
+    color: #2D2D2D;
+    font-weight: 600;
+}
+
+/* ── ENTREPRENEUR SECTION ── */
+.entrepreneur-hero {
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.entrepreneur-container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 120px 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.entrepreneur-content {
+    color: #2D2D2D;
+}
+
+.entrepreneur-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    max-width: 100%;
+    text-align: left;
+}
+
+.entrepreneur-desc {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.entrepreneur-image-wrapper {
+    position: relative;
+}
+
+.entrepreneur-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: block;
+    position: relative;
+}
+
+.entrepreneur-frame {
+    position: relative;
+}
+
+.entrepreneur-frame::before {
+    display: none;
+}
+
+@media (max-width: 968px) {
+    .entrepreneur-container {
+        grid-template-columns: 1fr;
+        padding: 80px 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .entrepreneur-content {
+        order: 0;
+    }
+
+    .entrepreneur-image-wrapper {
+        order: 2;
+    }
+
+    .entrepreneur-title {
+        font-size: 2rem;
+    }
+}
+
+/* ── DISCOURSE GRID ── */
+.discourse-btn {
+    padding: 1rem 1.75rem;
+    background: transparent;
+    border: 2px solid #B87333;
+    border-radius: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #B87333;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 250ms ease;
+    min-height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.discourse-btn:hover {
+    background: #B87333;
+    color: #FFFFFF;
+    transform: none;
+}
+
+.discourse-btn:active {
+    transform: none;
+}
+
+.discourse-btn:visited {
+    color: #B87333;
+}
+
+/* ── Animations ── */
+.fade-in {
+    animation: fadeInUp 0.6s ease-out both;
+}
+
+.fade-in-2 {
+    animation-delay: 0.15s;
+}
+
+.fade-in-3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .discourse-btn {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+        min-height: auto;
+        width: fit-content;
+    }
+}
