@@ -1,0 +1,83 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - img "Acharya Upendra Ji — Jeevan Mukt Sadguru" [ref=e7]
+    - generic [ref=e8]:
+      - generic [ref=e9]: Jeevan Mukt Sadguru
+      - heading "Acharya Upendra Ji" [level=1] [ref=e10]
+      - paragraph [ref=e12]:
+        - text: Acharya Ji is dedicated to transforming the destiny of Bharat. Along with co founders
+        - strong [ref=e13]: Guru Maa Neeta Tai
+        - text: ", and"
+        - strong [ref=e14]: respected Rupa Tai
+        - text: ", he created Antar Yog Foundation with a vision of"
+      - generic [ref=e15]:
+        - generic [ref=e16]: जनहिताय स्वयं मोक्षाय च
+        - generic [ref=e17]: For the welfare of all, and for the liberation of oneself
+      - paragraph [ref=e18]:
+        - text: Since 2005, he is tirelessly working on creating strong, prosperous and spiritually grounded citizens. He is committed to create a Bharat that once again rises as a
+        - strong [ref=e19]: Vishwa Guru
+        - text: ", a guiding light for the world. Every program, every teaching, every Shibir is one step toward this vision."
+  - generic [ref=e21]:
+    - heading "Creator of Powerful Sadhanas" [level=2] [ref=e22]
+    - img "Acharya Upendra Ji teaching Sadhana" [ref=e26]
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: "Acharya Ji empowers each person to change his own destiny with proven techniques. Through years of intense meditation and penance, he has created innovative Sadhanas. These powerful tools of self transformation are delivering instant results to lakhs of seekers : from health, prosperity to peace of mind."
+      - link "Learn Durga Saptashati Sadhana" [ref=e29] [cursor=pointer]:
+        - /url: https://learn.antaryogfoundation.in/p/durga-saptashati-sadhana
+  - generic [ref=e31]:
+    - heading "The Visionary" [level=2] [ref=e32]
+    - generic [ref=e34]:
+      - generic [ref=e35]: Impact Across India
+      - generic [ref=e36]: 10,000+
+      - generic [ref=e37]: Seekers Guided
+      - list [ref=e38]:
+        - listitem [ref=e39]: ▪ Shibirs
+        - listitem [ref=e40]: ▪ Discourses
+        - listitem [ref=e41]: ▪ Nirjanwas Retreats
+      - generic [ref=e42]: in 50+ cities
+    - generic [ref=e43]:
+      - paragraph [ref=e44]:
+        - text: Acharya Ji founded Antar Yog Foundation to make the powerful sadhanas accessible to everyone. Through Shibirs (immersive spiritual camps), Discourses, and Nirjanwas retreats, he has personally guided over
+        - strong [ref=e45]: 10,000 seekers across 50+ cities
+        - text: .
+      - paragraph [ref=e46]:
+        - text: Acharya Ji is deeply committed to the awakening of women, honoring the
+        - strong [ref=e47]: Durga Shakti
+        - text: — divine feminine power — within every person. He believes that true national transformation begins when both men and women rise as compassionate, self-reliant leaders grounded in inner wisdom.
+  - generic [ref=e49]:
+    - heading "A Master Healer" [level=2] [ref=e50]
+    - img "Acharya Upendra Ji - Master Healer" [ref=e54]
+    - generic [ref=e55]:
+      - paragraph [ref=e56]:
+        - text: Acharya Ji's
+        - strong [ref=e57]: Science of Healing
+        - text: goes beyond conventional medicine to reveal the true personal root cause of disease. Illness originates not just in the body but in unresolved karma, energy centres, and imbalanced relationships. Lasting healing requires addressing all three.
+      - paragraph [ref=e58]: Through guided sessions, thousands of seekers have experienced recovery from chronic ailments that conventional treatment could not resolve.
+      - link "Science of Healing" [ref=e59] [cursor=pointer]:
+        - /url: https://events.antaryogfoundation.in/soh-webinar
+  - generic [ref=e61]:
+    - heading "A Prolific Author" [level=2] [ref=e62]
+    - img "Acharya Upendra Ji - Prolific Author" [ref=e66]
+    - generic [ref=e67]:
+      - paragraph [ref=e68]: Acharya Ji decodes symbolic meaning of scriptures making them useful for everyday life. He has written books on the Puranas, Gitas, Upanishads to reveal their practical wisdom.
+      - paragraph [ref=e69]: "He is a prolific author of 60+ books: including commentary on 40+ Gitas, Upanishads, Puranas, motivational, business and finance books."
+      - link "Back to Main Site" [ref=e70] [cursor=pointer]:
+        - /url: mockup1.html
+  - generic [ref=e72]:
+    - generic [ref=e73]:
+      - heading "An Entrepreneur, Shree Vidya Guru" [level=2] [ref=e74]
+      - paragraph [ref=e75]: "Beyond spiritual mastery, Acharya Ji is a seasoned entrepreneur and business mentor. He guides aspiring leaders with ethical wealth creation beniftting all stakeholders: employees, customers, and communities."
+    - img "Acharya Upendra Ji mentoring entrepreneurs and business leaders" [ref=e78]
+  - generic [ref=e80]:
+    - heading "A Compassionate Humanitarian" [level=2] [ref=e81]
+    - img "Acharya Upendra Ji - Compassionate Humanitarian" [ref=e85]
+    - generic [ref=e86]:
+      - paragraph [ref=e87]:
+        - text: The foundation regularly organizes
+        - strong [ref=e88]: Mahadaan
+        - text: ", a significant charitable event under Acharya Ji's direction. Acharya Ji teaches the righteous way of giving donations according to our scriptures."
+      - paragraph [ref=e89]: "Following this donation process enables seekers to resolve karmic debts from past lives, fostering prosperity. Nine societal groups receive regular support with food and essentials delivered with compassion: Sanyasis, Brahmans, Children, Orphans, Specially-abled individuals, Married women, Poor citizens, Senior citizens, and Diseased persons."
+      - paragraph [ref=e90]:
+        - text: "Acharya Ji emphasizes:"
+        - strong [ref=e91]: "\"The world is interested in givers, not takers; so be a giver.\""
+        - text: This initiative reflects the organization's commitment to societal welfare grounded in traditional principles.

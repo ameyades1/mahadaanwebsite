@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Mahadaan Mockups" [ref=e4] [cursor=pointer]:
+      - /url: index.html
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: Website Designs
+      - heading "Mahadaan Initiative" [level=1] [ref=e8]
+      - paragraph [ref=e9]: Two distinct design approaches for the Antaryog Foundation's sacred giving campaign.
+    - generic [ref=e10]:
+      - link "🎨" [ref=e11] [cursor=pointer]:
+        - /url: mockup1.html
+        - generic [ref=e12]: 🎨
+      - generic [ref=e13]:
+        - link "Design By Ameya Mockup 1 v7 theme with warm copper, gold, and cream palette. Features compassionate humanitarian hero section with responsive layout and inspiring typography." [ref=e14] [cursor=pointer]:
+          - /url: mockup1.html
+          - generic [ref=e15]: Design By Ameya
+          - heading "Mockup 1" [level=2] [ref=e16]
+          - paragraph [ref=e17]: v7 theme with warm copper, gold, and cream palette. Features compassionate humanitarian hero section with responsive layout and inspiring typography.
+        - link "View Design →" [ref=e18] [cursor=pointer]:
+          - /url: mockup1.html
+      - link "🎨" [ref=e19] [cursor=pointer]:
+        - /url: mockup2.html
+        - generic [ref=e20]: 🎨
+      - generic [ref=e21]:
+        - link "Design By Swapnil Mockup 2 Image-based card grid design with elegant Cinzel typography. Direct navigation to 8 donation categories with detailed category pages and call-to-action." [ref=e22] [cursor=pointer]:
+          - /url: mockup2.html
+          - generic [ref=e23]: Design By Swapnil
+          - heading "Mockup 2" [level=2] [ref=e24]
+          - paragraph [ref=e25]: Image-based card grid design with elegant Cinzel typography. Direct navigation to 8 donation categories with detailed category pages and call-to-action.
+        - link "View Design →" [ref=e26] [cursor=pointer]:
+          - /url: mockup2.html
+  - contentinfo [ref=e27]:
+    - paragraph [ref=e28]: © 2026 Antaryog Foundation · Mahadaan Website Mockup Gallery

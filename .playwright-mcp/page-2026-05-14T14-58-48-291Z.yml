@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - text: Antaryog Foundation
+      - generic [ref=e4]: "| Mahadaan"
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "About" [ref=e7] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e8]:
+        - link "Acharya Ji" [ref=e9] [cursor=pointer]:
+          - /url: about-acharya-ji.html
+      - listitem [ref=e10]:
+        - link "Impact" [ref=e11] [cursor=pointer]:
+          - /url: "#impact"
+      - listitem [ref=e12]:
+        - link "How It Works" [ref=e13] [cursor=pointer]:
+          - /url: "#how-it-works"
+      - listitem [ref=e14]:
+        - link "Programs" [ref=e15] [cursor=pointer]:
+          - /url: "#programs"
+      - listitem [ref=e16]:
+        - link "Donate" [ref=e17] [cursor=pointer]:
+          - /url: "#cta"
+          - strong [ref=e18]: Donate
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - img "Acharya Upendra Ji - Compassionate Humanitarian" [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]: A Compassionate Initiative
+        - 'heading "Mahadaan: The Gift of Transformation" [level=1] [ref=e26]':
+          - text: "Mahadaan:"
+          - text: The Gift of Transformation
+        - paragraph [ref=e27]:
+          - text: The foundation regularly organizes
+          - strong [ref=e28]: Mahadaan
+          - text: ", a sacred charitable event under Acharya Upendra Ji's direction. Acharya Ji teaches the righteous way of giving donations according to our scriptures."
+        - paragraph [ref=e29]: "Following this donation process enables seekers to resolve karmic debts from past lives, fostering prosperity. Nine societal groups receive regular support with food and essentials delivered with compassion: Sanyasis, Brahmans, Children, Orphans, Specially-abled individuals, Married women, Poor citizens, Senior citizens, and Diseased persons."
+        - paragraph [ref=e30]:
+          - emphasis [ref=e31]: "\"The world is interested in givers, not takers; so be a giver.\""
+          - generic [ref=e32]: — Acharya Upendra Ji
+        - generic [ref=e33]:
+          - button "Start Giving" [ref=e34] [cursor=pointer]
+          - button "Learn More" [ref=e35] [cursor=pointer]
+    - generic [ref=e36]:
+      - generic [ref=e37]: "1"
+      - heading "About Mahadaan" [level=2] [ref=e38]
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "Mahadaan (महादान)" [level=3] [ref=e41]
+          - paragraph [ref=e42]: "\"A Sacred Offering That Lives Beyond You\""
+          - paragraph [ref=e43]:
+            - text: Mahadaan means
+            - strong [ref=e44]: "\"Great Charity\""
+            - text: — a selfless act of giving performed with pure intention, without expectation, for the welfare of society. In our spiritual tradition, charity is not merely help — it is
+            - strong [ref=e45]: Dharma
+            - text: . It purifies the giver and uplifts the receiver.
+          - paragraph [ref=e46]:
+            - text: When Mahadaan is performed in the presence of a
+            - strong [ref=e47]: Jivit Guru
+            - text: (living spiritual master), it becomes a divine blessing in action. Under the enlightened guidance of
+            - strong [ref=e48]: Acharya Upendra Ji
+            - text: ", every offering reaches the right hands, at the right time, for the right purpose."
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: "The Guru Transforms:"
+            - list [ref=e51]:
+              - listitem [ref=e52]:
+                - text: ✦
+                - strong [ref=e53]: Charity
+                - text: into Seva (selfless service)
+              - listitem [ref=e54]:
+                - text: ✦
+                - strong [ref=e55]: Donation
+                - text: into Devotion (spiritual offering)
+              - listitem [ref=e56]:
+                - text: ✦
+                - strong [ref=e57]: Contribution
+                - text: into Sadhana (spiritual practice)
+        - generic [ref=e58]:
+          - heading "The Truth of Giving" [level=3] [ref=e59]
+          - paragraph [ref=e60]:
+            - strong [ref=e61]: Mahadaan is not about how much you give.
+            - text: It is about purity of intention, compassion in the heart, and selflessness in action.
+          - paragraph [ref=e62]: Even a small act done with sincere feeling becomes Mahadaan. True giving transforms not just the receiver—it transforms the giver. It softens the heart, removes fear of loss, awakens gratitude, and replaces ego with humility.
+          - paragraph [ref=e63]:
+            - text: "\"At the end of life, wealth stays here. Status stays here. Possessions stay here."
+            - strong [ref=e64]: Only karma travels forward.
+            - text: "\""
+          - paragraph [ref=e65]: Mahadaan ensures that what travels with your soul is light — not burden.
+    - generic [ref=e66]:
+      - generic [ref=e67]: "2"
+      - heading "Our Impact" [level=2] [ref=e68]
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: 25000+
+          - generic [ref=e72]: Lives Touched
+        - generic [ref=e73]:
+          - generic [ref=e74]: 120+
+          - generic [ref=e75]: Programs Supported
+        - generic [ref=e76]:
+          - generic [ref=e77]: "15"
+          - generic [ref=e78]: Years of Service
+        - generic [ref=e79]:
+          - generic [ref=e80]: 500+
+          - generic [ref=e81]: Volunteers Worldwide
+    - generic [ref=e82]:
+      - generic [ref=e83]: "3"
+      - heading "How Mahadaan Works" [level=2] [ref=e84]
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: "1"
+          - heading "Choose a Program" [level=3] [ref=e88]
+          - paragraph [ref=e89]: Select from wellness, yoga, meditation, or community transformation programs that resonate with your values.
+        - generic [ref=e90]:
+          - generic [ref=e91]: "2"
+          - heading "Give Generously" [level=3] [ref=e92]
+          - paragraph [ref=e93]: Make a one-time donation or become a sustaining member of our community of support.
+        - generic [ref=e94]:
+          - generic [ref=e95]: "3"
+          - heading "Transform Lives" [level=3] [ref=e96]
+          - paragraph [ref=e97]: "Your gift enables direct impact: training, retreats, accessibility initiatives, and global reach."
+    - generic [ref=e98]:
+      - generic [ref=e99]: "4"
+      - heading "Programs Supported by Mahadaan" [level=2] [ref=e100]
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: Yoga Teacher Training
+          - paragraph [ref=e104]: Comprehensive 200-hour and advanced certifications for aspiring yoga instructors and wellness facilitators.
+        - generic [ref=e105]:
+          - generic [ref=e106]: Wellness Retreats
+          - paragraph [ref=e107]: Immersive shibirs and retreats combining yoga, meditation, pranayama, and holistic wellness practices.
+        - generic [ref=e108]:
+          - generic [ref=e109]: Community Access
+          - paragraph [ref=e110]: Scholarships and subsidized programs for underserved communities and low-income participants.
+        - generic [ref=e111]:
+          - generic [ref=e112]: Research Initiatives
+          - paragraph [ref=e113]: Studies on the effectiveness of traditional practices and their integration with modern wellness.
+        - generic [ref=e114]:
+          - generic [ref=e115]: Mentorship Programs
+          - paragraph [ref=e116]: One-on-one guidance and group mentoring with experienced spiritual teachers and wellness practitioners.
+        - generic [ref=e117]:
+          - generic [ref=e118]: Online Learning
+          - paragraph [ref=e119]: Accessible courses, webinars, and digital resources bringing Antaryog's wisdom to global audiences.
+    - generic [ref=e120]:
+      - generic [ref=e121]: "5"
+      - heading "Stories of Transformation" [level=2] [ref=e122]
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - generic [ref=e125]: "\"Antaryog's programs completely transformed my understanding of wellness. The teachers are genuinely dedicated to student growth.\""
+          - generic [ref=e126]: — Priya S., Yoga Teacher
+        - generic [ref=e127]:
+          - generic [ref=e128]: "\"The scholarship made it possible for me to complete my training. I'm now teaching in my community and giving back just like they did.\""
+          - generic [ref=e129]: — Rajesh M., Community Leader
+        - generic [ref=e130]:
+          - generic [ref=e131]: "\"I was skeptical of traditional practices until I attended an Antaryog retreat. The integration of science and spirituality is remarkable.\""
+          - generic [ref=e132]: — Dr. Anjali P., Wellness Researcher
+    - generic [ref=e134]:
+      - heading "Begin Your Mahadaan Today" [level=2] [ref=e135]
+      - paragraph [ref=e136]: Make a meaningful gift that transforms lives. Your support powers spiritual education, wellness, and community transformation worldwide.
+      - button "Donate & Make an Impact" [ref=e137] [cursor=pointer]
+  - contentinfo [ref=e138]:
+    - generic [ref=e139]:
+      - link "About" [ref=e140] [cursor=pointer]:
+        - /url: "#about"
+      - link "Programs" [ref=e141] [cursor=pointer]:
+        - /url: "#programs"
+      - link "Documentation" [ref=e142] [cursor=pointer]:
+        - /url: ../docs/google-eeat-guidelines.md
+      - link "Contact" [ref=e143] [cursor=pointer]:
+        - /url: mailto:contact@antaryog.org
+    - paragraph [ref=e144]:
+      - text: Antaryog Foundation | Mahadaan Initiative
+      - text: Building spiritual wellness globally
+      - text: © 2026 Antaryog Foundation. All rights reserved.

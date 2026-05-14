@@ -1,0 +1,51 @@
+[      41ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[     107ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://ameyades1.github.io/mahadaanwebsite/css/navbar.css:0
+[     107ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://ameyades1.github.io/mahadaanwebsite/css/footer.css:0
+[   17383ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:29:17
+[   17388ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:29:17
+[   17398ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:29:17
+[   17416ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17431ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17449ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17466ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17482ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17499ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17517ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17533ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17548ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17566ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17583ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17598ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17616ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17632ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17649ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17666ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17683ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17699ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17715ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17732ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17
+[   17748ms] TypeError: Cannot read properties of null (reading 'classList')
+    at https://ameyades1.github.io/mahadaanwebsite/js/main.js:27:17

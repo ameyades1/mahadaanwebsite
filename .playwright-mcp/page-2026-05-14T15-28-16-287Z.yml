@@ -1,0 +1,92 @@
+- generic [active] [ref=e1]:
+  - link "← Back to Mockup" [ref=e2] [cursor=pointer]:
+    - /url: ../mockup2.html
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: ../mockup2.html
+        - img [ref=e6]
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: ../mockup2.html
+        - button "Categories ▼" [ref=e10] [cursor=pointer]:
+          - text: Categories
+          - generic [ref=e11]: ▼
+        - link "Donate" [ref=e12] [cursor=pointer]:
+          - /url: "#donate"
+      - link "Donate Now" [ref=e13] [cursor=pointer]:
+        - /url: "#donate"
+  - generic [ref=e14]:
+    - img [ref=e15]
+    - generic [ref=e18]:
+      - generic [ref=e19]: ANTAR YOG MAHADAAN
+      - heading "Guru Daan Mahadaan" [level=1] [ref=e20]
+      - heading "The Purest Form of Giving" [level=2] [ref=e21]
+      - paragraph [ref=e22]: Support Acharya Upendra Ji’s Mission to Make Bharat a Vishwa Guru
+      - link "Donate Now" [ref=e23] [cursor=pointer]:
+        - /url: "#donate"
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]: "01"
+        - generic [ref=e29]:
+          - heading "Introduction" [level=2] [ref=e30]
+          - paragraph [ref=e31]: The Supreme Offering That Transcends All
+      - generic [ref=e32]:
+        - heading "\"अन्नदानं परं दानं विद्यादानमतः परम्। अन्नेन क्षणिका तृप्तिर्यावज्जीवं च विद्यया॥\"" [level=3] [ref=e33]:
+          - text: "\"अन्नदानं परं दानं विद्यादानमतः परम्।"
+          - text: अन्नेन क्षणिका तृप्तिर्यावज्जीवं च विद्यया॥"
+        - text: (Sanskrit Subhashit)
+        - paragraph [ref=e34]: "\"Food donation is the greatest of all, but the donation of knowledge is even higher. Food satisfies hunger temporarily, while knowledge nourishes a person for a lifetime.\""
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: This profound wisdom holds even greater significance when applied to the Guru.
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - strong [ref=e39]: Anna Daan (Food Donation)
+            - text: alleviates hunger for a moment.
+          - generic [ref=e40]:
+            - strong [ref=e41]: Vidya Daan (Knowledge Donation)
+            - text: provides the means to sustain oneself.
+          - generic [ref=e42]:
+            - strong [ref=e43]: Guru Daan
+            - text: transcends both—because the Guru does not merely teach; He liberates. The Guru removes ignorance, suffering, and karmic limitations, guiding seekers towards self-realisation, abundance, and ultimate freedom.
+        - paragraph [ref=e44]: For centuries, Guru Daan has been regarded as the most sacred and powerful offering, as it nourishes the very source of knowledge and wisdom that transforms humanity.
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: "02"
+        - generic [ref=e48]:
+          - heading "Why Donate for Guru Daan?" [level=2] [ref=e49]
+          - paragraph [ref=e50]: Fuel a Divine Vision, Elevate Your Life
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: "Since time immemorial, Sanatan Dharma has revered the Guru as the divine bridge between ignorance and enlightenment. The scriptures declare:"
+        - generic [ref=e53]: 👉 "Acharya Devo Bhava" – The Guru is God in human form.
+        - generic [ref=e54]: 👉 Guru Daan has been offered by kings, sages, and seekers throughout history to sustain Vedic knowledge, spiritual education, and dharmic wisdom.
+        - generic [ref=e55]:
+          - heading "Why Now?" [level=4] [ref=e56]
+          - paragraph [ref=e57]: In a world where materialism often overshadows spirituality, and dharma fades into the background, Guru Daan ensures that Sanatan knowledge, healing sciences, and spiritual wisdom continue to thrive for generations. Your contribution supports Guru Seva, nurturing divine teachings that empower individuals and uplift Bharat.
+        - generic [ref=e58]: "🌍 Guru Daan aligns with the vision of Antar Yog’s Mission: To establish Bharat as a Vishwa Guru, guiding humanity through spiritual awakening and dharmic wisdom."
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]: "03"
+        - generic [ref=e62]:
+          - heading "Who Benefits from Guru Daan?" [level=2] [ref=e63]
+          - paragraph [ref=e64]: The Gift That Transforms Lives and Nations
+      - generic [ref=e65]:
+        - generic [ref=e66]: ✅ Spiritual Seekers – Provides access to divine knowledge, leading to self-realisation and freedom.
+        - generic [ref=e67]: ✅ Individuals in Financial Hardship – The Guru’s wisdom dissolves karmic obstacles and attracts abundance.
+        - generic [ref=e68]: ✅ The Next Generation – Reviving Sanatan wisdom ensures that the youth inherit spiritual strength.
+        - generic [ref=e69]: ✅ Bharat as a Whole – A spiritually awakened society leads to a dharmic and prosperous nation.
+      - generic [ref=e70]:
+        - paragraph [ref=e72]: "\"After contributing to Guru Daan, my business flourished unexpectedly, and my family experienced immense spiritual growth. It is the best decision I ever made!\""
+        - text: – xx, Mumbai
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - heading "Create an Impact That Lasts" [level=2] [ref=e75]
+        - paragraph [ref=e76]: Transform Lives, Attract Abundance, Leave a Legacy
+      - generic [ref=e77]:
+        - link "Donate Now" [ref=e78] [cursor=pointer]:
+          - /url: "#"
+        - link "Contact Us" [ref=e79] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e80]:
+    - paragraph [ref=e82]: © 2026 Antar Yog Foundation. All Rights Reserved.
