@@ -1,11 +1,12 @@
-/* ── BIO SECTION LAYOUT ── */
+/* ── BIO SECTION LAYOUT (Clean Editorial Style) ── */
 .bio-section {
-    padding: 5rem 1.5rem;
+    padding: 120px 2rem;
     position: relative;
+    background: #FFFFFF;
 }
 
 .bio-section--cream {
-    background: linear-gradient(135deg, #FBF7EE 0%, rgba(249,246,240,0.8) 50%, rgba(232,184,75,0.02) 100%);
+    background: #FFFFFF;
 }
 
 .bio-section--white {
@@ -15,10 +16,10 @@
 .bio-section__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5rem;
-    row-gap: 1.5rem;
+    column-gap: 60px;
+    row-gap: 2rem;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -32,14 +33,14 @@
 
 @media (max-width: 767px) {
     .bio-section {
-        padding: 2.5rem 1.25rem;
+        padding: 80px 1.5rem;
     }
 
     .bio-section__grid {
         display: grid;
         grid-template-columns: 1fr;
-        column-gap: 1.5rem;
-        row-gap: 1.25rem;
+        column-gap: 0;
+        row-gap: 2rem;
     }
 
     .chapter-title {
@@ -57,52 +58,48 @@
 
 .acharya-title {
     font-family: 'Lora', serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #5C3010;
-    letter-spacing: -0.8px;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .acharya-honorific {
     display: inline-block;
     font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #B87333;
     background: transparent;
     border: none;
     padding: 0;
-    margin-bottom: 1.25rem;
-    opacity: 0.9;
+    margin-bottom: 1rem;
+    opacity: 1;
 }
 
 .acharya-tagline {
-    font-size: 1.15rem;
-    color: #6B5244;
-    font-style: italic;
+    font-size: 1.1rem;
+    color: #555555;
+    font-style: normal;
     margin-top: 1.5rem;
-    line-height: 1.65;
-    font-weight: 300;
-    max-width: 85%;
-    text-align: justify;
+    line-height: 1.7;
+    font-weight: 400;
+    max-width: 100%;
+    text-align: left;
 }
 
 .acharya-tagline strong {
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
-    color: #5C3010;
+    color: #2D2D2D;
 }
 
 .acharya-divider {
-    width: 60px;
-    height: 2px;
-    background: #B87333;
-    border-radius: 1px;
-    margin: 1.5rem 0 1.5rem 0;
+    display: none;
 }
 
 /* ── IMAGE & PORTRAIT COLUMN ── */
@@ -115,72 +112,68 @@
 .bio-portrait-wrapper {
     position: relative;
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
 }
 
 .bio-portrait-wrapper img {
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(92,48,16,0.16);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     display: block;
     position: relative;
     z-index: 2;
 }
 
 .bio-portrait-bg {
-    position: absolute;
-    inset: -20px -20px 20px 20px;
-    border-radius: 26px;
-    background: linear-gradient(135deg, rgba(184,115,51,0.1) 0%, rgba(232,184,75,0.05) 100%);
-    z-index: 1;
-    border: 1px solid rgba(184,115,51,0.08);
+    display: none;
 }
 
 /* ── DECORATIVE PANELS ── */
 .bio-panel {
     position: relative;
-    border-radius: 20px;
-    padding: 2rem;
+    border-radius: 0;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 320px;
     text-align: center;
+    border: 1px solid #E0E0E0;
 }
 
 .bio-panel--dark {
-    background: linear-gradient(135deg, #5C3010 0%, #6B3E2E 100%);
-    color: #FBF7EE;
+    background: #F8F8F8;
+    color: #2D2D2D;
 }
 
 .bio-panel--light {
-    background: #FBF7EE;
-    border: 1.5px solid rgba(184,115,51,0.3);
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
 }
 
 .bio-stat-number {
     font-family: 'Lora', serif;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
-    color: #E8B84B;
+    color: #B87333;
     line-height: 1.1;
     margin-bottom: 1rem;
 }
 
 .bio-stat-label {
     font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(251,247,238,0.7);
-    margin-bottom: 1rem;
+    color: #666666;
+    margin-bottom: 1.5rem;
     display: block;
 }
 
 .bio-panel--dark .bio-stat-label {
-    color: rgba(251,247,238,0.7);
+    color: #666666;
 }
 
 .bio-panel--light .bio-stat-label {
@@ -189,47 +182,49 @@
 
 .bio-programs-list {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.8;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(232,184,75,0.2);
+    font-size: 0.95rem;
+    line-height: 2;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #D0D0D0;
     text-align: left;
 }
 
 .bio-programs-list li {
     list-style: none;
+    color: #555555;
 }
 
 .bio-programs-list li::before {
-    content: '▪ ';
-    color: #E8B84B;
-    margin-right: 0.5rem;
+    content: '•';
+    color: #B87333;
+    margin-right: 0.75rem;
+    font-weight: bold;
 }
 
 /* ── Sanskrit quote ── */
 .sanskrit-block {
     background: transparent;
-    border-left: 2px solid #B87333;
+    border-left: 3px solid #B87333;
     border-radius: 0;
-    padding: 1.5rem 0 1.5rem 1.75rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
     margin: 2rem 0;
 }
 
 .sanskrit-text {
     font-family: 'Lora', serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #B87333;
     font-weight: 600;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
 }
 
 .sanskrit-translation {
     font-size: 0.95rem;
-    color: #7A6858;
+    color: #666666;
     font-style: italic;
-    margin-top: 0.5rem;
-    font-weight: 300;
+    margin-top: 0.75rem;
+    font-weight: 400;
 }
 
 /* ── CONTENT COLUMN ── */
@@ -240,9 +235,9 @@
 
 .chapter-label {
     font-family: 'Inter', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #B87333;
     margin-bottom: 1rem;
@@ -251,24 +246,30 @@
 
 .chapter-title {
     font-family: 'Lora', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #5C3010;
-    margin: 0 0 1.5rem 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin: 0 0 2rem 0;
     letter-spacing: -0.3px;
     grid-column: 1 / -1;
+    line-height: 1.3;
 }
 
 .bio-paragraph {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     line-height: 1.8;
-    color: #5A4A40;
-    margin-bottom: 1.5rem;
-    text-align: justify;
+    color: #555555;
+    margin-bottom: 1.75rem;
+    text-align: left;
 }
 
 .bio-paragraph:last-child {
     margin-bottom: 0;
+}
+
+.bio-paragraph strong {
+    color: #2D2D2D;
+    font-weight: 600;
 }
 
 /* ── ENTREPRENEUR SECTION ── */
@@ -282,33 +283,33 @@
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 5rem 1.5rem;
+    padding: 120px 2rem;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
+    gap: 60px;
     align-items: center;
 }
 
 .entrepreneur-content {
-    color: #5C3010;
+    color: #2D2D2D;
 }
 
 .entrepreneur-subtitle {
     font-size: 1.1rem;
-    font-weight: 300;
-    color: #6B5244;
+    font-weight: 400;
+    color: #555555;
     margin-bottom: 2rem;
     line-height: 1.7;
-    max-width: 480px;
-    text-align: justify;
+    max-width: 100%;
+    text-align: left;
 }
 
 .entrepreneur-desc {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
-    color: #5A4A40;
+    color: #555555;
     margin-bottom: 2rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .entrepreneur-image-wrapper {
@@ -317,8 +318,8 @@
 
 .entrepreneur-image {
     width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(92,48,16,0.12);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     display: block;
     position: relative;
 }
@@ -328,19 +329,13 @@
 }
 
 .entrepreneur-frame::before {
-    content: '';
-    position: absolute;
-    inset: -20px -20px 20px 20px;
-    border-radius: 26px;
-    background: linear-gradient(135deg, rgba(184,115,51,0.1) 0%, rgba(232,184,75,0.05) 100%);
-    z-index: 1;
-    border: 1px solid rgba(184,115,51,0.08);
+    display: none;
 }
 
 @media (max-width: 968px) {
     .entrepreneur-container {
         grid-template-columns: 1fr;
-        padding: 3.5rem 1.25rem;
+        padding: 80px 1.5rem;
         gap: 2.5rem;
     }
 
@@ -353,64 +348,62 @@
     }
 
     .entrepreneur-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 }
 
 /* ── DISCOURSE GRID ── */
 .discourse-btn {
-    padding: 2rem 1.5rem;
-    background: linear-gradient(135deg, rgba(184,115,51,0.08) 0%, rgba(232,184,75,0.04) 100%);
+    padding: 1rem 1.75rem;
+    background: transparent;
     border: 2px solid #B87333;
-    border-radius: 12px;
+    border-radius: 0;
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: #5C3010;
+    color: #B87333;
     text-align: center;
     line-height: 1.5;
     cursor: pointer;
-    transition: all 300ms ease;
-    min-height: 120px;
-    display: flex;
+    transition: all 250ms ease;
+    min-height: auto;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 
 .discourse-btn:hover {
-    background: linear-gradient(135deg, rgba(184,115,51,0.15) 0%, rgba(232,184,75,0.1) 100%);
-    border-color: #A0632A;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(92,48,16,0.15);
-    color: #5C3010;
+    background: #B87333;
+    color: #FFFFFF;
+    transform: none;
 }
 
 .discourse-btn:active {
-    transform: translateY(-1px);
+    transform: none;
 }
 
 .discourse-btn:visited {
-    color: #5C3010;
+    color: #B87333;
 }
 
 /* ── Animations ── */
 .fade-in {
-    animation: fadeInUp 0.8s ease-out both;
+    animation: fadeInUp 0.6s ease-out both;
 }
 
 .fade-in-2 {
-    animation-delay: 0.2s;
+    animation-delay: 0.15s;
 }
 
 .fade-in-3 {
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -420,8 +413,9 @@
 
 @media (max-width: 768px) {
     .discourse-btn {
-        padding: 1.5rem 1rem;
+        padding: 1rem 1.5rem;
         font-size: 0.9rem;
-        min-height: 100px;
+        min-height: auto;
+        width: fit-content;
     }
 }
