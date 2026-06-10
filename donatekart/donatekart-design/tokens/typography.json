@@ -1,0 +1,120 @@
+{
+  "families": [
+    "Redonda Black",
+    "Redonda Bold",
+    "SFMono-Regular"
+  ],
+  "scale": {
+    "heading-1": {
+      "fontFamily": "Redonda Black",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "heading-2": {
+      "fontFamily": "Redonda Black",
+      "fontSize": "40px",
+      "fontWeight": "700",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "heading-3": {
+      "fontFamily": "Redonda Black",
+      "fontSize": "36px",
+      "fontWeight": "700",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "body": {
+      "fontFamily": "Redonda Bold",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "caption": {
+      "fontFamily": "Redonda Bold",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "code": {
+      "fontFamily": "SFMono-Regular",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": null,
+      "source": "css"
+    }
+  },
+  "fontFaces": [
+    {
+      "family": "Redonda Bold",
+      "src": "https://www.donatekart.com/fonts/fonnts.com-Redonda_Compressed_Bold.otf",
+      "format": "opentype",
+      "weight": "700"
+    },
+    {
+      "family": "Redonda Black",
+      "src": "https://www.donatekart.com/fonts/fonnts.com-Redonda_Compressed_Black.otf",
+      "format": "opentype",
+      "weight": "900"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrJJLedw.ttf",
+      "format": "truetype",
+      "weight": "400"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf",
+      "format": "truetype",
+      "weight": "500"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmr19lEA.ttf",
+      "format": "truetype",
+      "weight": "600"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8V1s.ttf",
+      "format": "truetype",
+      "weight": "300"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrFJA.ttf",
+      "format": "truetype",
+      "weight": "400"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9V1s.ttf",
+      "format": "truetype",
+      "weight": "500"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6V1s.ttf",
+      "format": "truetype",
+      "weight": "600"
+    },
+    {
+      "family": "Poppins",
+      "src": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7V1s.ttf",
+      "format": "truetype",
+      "weight": "700"
+    }
+  ],
+  "rules": {
+    "maxSizesPerScreen": 4,
+    "headingWeightRange": "600-700",
+    "bodyWeight": 400,
+    "lineHeightBody": 1.5,
+    "lineHeightHeading": 1.2
+  }
+}
