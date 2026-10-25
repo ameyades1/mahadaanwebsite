@@ -298,13 +298,13 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
 }
 
 /* Full-bleed hero photo: add mh-hero-bleed to the hero section (the Group around .mh-hero-split).
-   Laptop: photo fills the hero's height and runs to the right screen edge. Phone: edge-to-edge photo on top. */
-.entry-content > .wp-block-group.alignfull.mh-hero-bleed { padding-block: 0 !important; padding-right: 0 !important; background: #fff; }
-.mh-hero-bleed .mh-hero-split { max-width: none; margin: 0; grid-template-columns: minmax(0, 40rem) 1fr; align-items: stretch; min-height: 35rem; }
+   Laptop: photo fills the hero's height inside the side margins, cropped from the right. Phone: edge-to-edge photo on top. */
+.entry-content > .wp-block-group.alignfull.mh-hero-bleed { padding-block: 0 !important; background: #fff; }
+.mh-hero-bleed .mh-hero-split { grid-template-columns: minmax(0, 36rem) 1fr; align-items: stretch; min-height: 35rem; }
 .mh-hero-bleed .mh-hero-split > :not(.mh-portrait) { align-self: center; padding-block: 3.5rem; }
 .mh-hero-bleed .mh-portrait { position: relative; max-width: none; margin: 0; overflow: hidden; }
 .mh-hero-bleed .mh-portrait .wp-block-image { position: absolute; inset: 0; margin: 0 !important; max-width: none; }
-.mh-hero-bleed .mh-portrait .wp-block-image img { width: 100%; height: 100%; aspect-ratio: auto; max-height: none; object-fit: cover; object-position: 50% 15%; border-radius: 0; box-shadow: none; }
+.mh-hero-bleed .mh-portrait .wp-block-image img { width: 100%; height: 100%; aspect-ratio: auto; max-height: none; object-fit: cover; object-position: 0% 15%; border-radius: 0; box-shadow: none; }
 .mh-hero-bleed .mh-portrait .wp-block-quote { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; margin: 0 !important; padding: 3rem 1rem 1.1rem !important;
   background: linear-gradient(transparent, rgba(20, 12, 6, .65)) !important; }
 .mh-hero-bleed .mh-portrait .wp-block-quote p { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, .4); }
@@ -313,4 +313,5 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
   .mh-hero-bleed .mh-hero-split { grid-template-columns: 1fr; min-height: 0; gap: 0; }
   .mh-hero-bleed .mh-hero-split > :not(.mh-portrait) { padding: 2rem var(--gutter) 2.5rem; }
   .mh-hero-bleed .mh-portrait { height: 60vh; height: 60svh; }
+  .mh-hero-bleed .mh-portrait .wp-block-image img { object-position: 50% 15%; }
 }
