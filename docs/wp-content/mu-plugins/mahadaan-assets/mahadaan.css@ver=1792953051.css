@@ -106,7 +106,7 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
 :is(.mh-card,.is-style-mh-card):hover .mh-cardimg img { transform: scale(1.04); }
 :is(.mh-card,.is-style-mh-card) .mh-tile { aspect-ratio: 16 / 10; display: grid; place-items: center; font-family: var(--deva); font-size: 2.6rem; color: var(--brown);
   background: radial-gradient(90% 120% at 50% 0%, #fbe39a 0%, #fdf0cc 45%, var(--panel) 100%); border-bottom: 1px solid var(--rule); }
-:is(.mh-card,.is-style-mh-card) .mh-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; flex: 1; }
+:is(.mh-card,.is-style-mh-card) .mh-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; flex: 1; text-align: center; }
 :is(.mh-card,.is-style-mh-card) h3 { font-size: 1.1rem !important; margin: 0 0 .35rem !important; line-height: 1.4; }
 :is(.mh-card,.is-style-mh-card) p { font-size: .92rem; line-height: 1.6; color: var(--muted); margin: 0 0 .8rem; flex: 1; }
 :is(.mh-card,.is-style-mh-card) .mh-more { font-size: .88rem; font-weight: 600; color: var(--accent); }
@@ -211,7 +211,7 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
   .mh-stats { grid-template-columns: 1fr 1fr; gap: 1.5rem 1rem; }
   .mh-grid, .mh-grid.cols-3, .mh-grid.cols-6 { grid-template-columns: 1fr 1fr; gap: .75rem; }
   :is(.mh-card,.is-style-mh-card) .mh-tile { font-size: 2rem; }
-  :is(.mh-card,.is-style-mh-card) .mh-body > p:not(.mh-more):not(.mh-sub) { display: none; }
+  :is(.mh-card,.is-style-mh-card) .mh-body > p:not(.mh-more):not(.mh-sub) { font-size: .9rem !important; line-height: 1.45; }
   :is(.mh-card,.is-style-mh-card) .mh-body { padding: .75rem .8rem .9rem; }
   :is(.mh-card,.is-style-mh-card) h3 { font-size: 1rem !important; }
   .mh-two { grid-template-columns: 1fr; gap: 2rem; }
