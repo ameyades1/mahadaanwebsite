@@ -287,3 +287,11 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
 .entry-content :is(.mh-card,.is-style-mh-card) h3 a, .entry-content .mh-more a, .entry-content .wp-block-button__link { text-decoration: none !important; }
 
 .mh-footer h4 { letter-spacing: .08em; font-weight: 600; }
+
+/* Phone-only helpers: add in the editor under Advanced → Additional CSS class(es). */
+@media (max-width: 921px) {
+  .mh-first-mobile { order: -1; }            /* move this block to the top once columns stack */
+}
+@media (max-width: 680px) {
+  .mh-lh-tight-mobile { line-height: 1.2 !important; }  /* tighter line spacing on phones */
+}
