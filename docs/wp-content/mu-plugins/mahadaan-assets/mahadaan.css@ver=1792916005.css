@@ -315,3 +315,10 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
   .mh-hero-bleed .mh-portrait { height: 60vh; height: 60svh; }
   .mh-hero-bleed .mh-portrait .wp-block-image img { object-position: 50% 15%; }
 }
+
+/* "Mahadaan" beside the logo, separated by a thin gold rule. */
+.site-header .custom-logo-link { display: inline-flex; align-items: center; text-decoration: none; }
+.mh-brand-name { font-family: var(--heading); font-weight: 600; font-size: 1.35rem; letter-spacing: -0.01em; color: var(--ast-global-color-3, #2b2520);
+  margin-left: .9rem; padding-left: .9rem; border-left: 1.5px solid var(--gold); line-height: 1.6rem; white-space: nowrap; }
+@media (max-width: 1100px) { .mh-brand-name { font-size: 1.15rem; margin-left: .7rem; padding-left: .7rem; } }
+@media (max-width: 380px) { .mh-brand-name { font-size: 1rem; margin-left: .55rem; padding-left: .55rem; } }
