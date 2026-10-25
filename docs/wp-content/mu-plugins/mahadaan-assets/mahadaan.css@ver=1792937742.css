@@ -61,7 +61,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .wp-block-button__link:hover, .mh-btn:hover { background: var(--accent); }
 .is-style-outline > .wp-block-button__link, .mh-btn.ghost { background: #fff; color: var(--brown) !important; }
-.is-style-outline > .wp-block-button__link:hover, .mh-btn.ghost:hover { background: var(--panel); }
+.is-style-outline > .wp-block-button__link:hover, .mh-btn.ghost:hover { background: var(--brown) !important; color: #fff !important; }
 .wp-block-buttons.mh-actions { justify-content: center; gap: .7rem; margin-top: 1.6rem !important; }
 
 /* Hero (sunrise glow) */
@@ -326,3 +326,16 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
    !important because Astra's own mobile-menu rules are more specific. */
 .site-header .menu-item:not(.menu-donate) > .menu-link, .ast-mobile-popup-drawer .menu-item:not(.menu-donate) > .menu-link { color: #000 !important; }
 .site-header .menu-toggle .ast-mobile-svg { fill: #000 !important; }
+
+/* "Why Mahadaan" 2x2 grid has no heading above it, so no top gap. */
+.mh-grid.mh-why { margin-top: 0; }
+/* Numbered steps: WordPress's list padding was overriding the box padding; white box so it shows on a panel section. */
+ol.mh-takeaways.wp-block-list { padding: 1.5rem !important; }
+.is-style-mh-panel .mh-takeaways { background: #fff; }
+
+/* "Why Mahadaan" points: solid brown panels with white text and gold headings. */
+.mh-grid.mh-why { gap: 1.25rem; }
+.mh-why > .wp-block-group { background: var(--brown); border-radius: var(--radius); padding: 2rem 1.75rem !important; border: 0; box-shadow: 0 6px 18px rgba(46,33,24,.18); }
+.mh-why > .wp-block-group h2, .mh-why > .wp-block-group h3 { color: var(--sun); font-size: 1.3rem; line-height: 1.35; margin: 0 0 .6rem; }
+.mh-why > .wp-block-group p { color: #fff; margin: 0; line-height: 1.6; }
+@media (max-width: 680px) { .mh-grid.mh-why { grid-template-columns: 1fr; } }
