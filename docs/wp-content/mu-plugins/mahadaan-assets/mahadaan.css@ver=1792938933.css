@@ -211,7 +211,7 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
   .mh-stats { grid-template-columns: 1fr 1fr; gap: 1.5rem 1rem; }
   .mh-grid, .mh-grid.cols-3, .mh-grid.cols-6 { grid-template-columns: 1fr 1fr; gap: .75rem; }
   :is(.mh-card,.is-style-mh-card) .mh-tile { font-size: 2rem; }
-  :is(.mh-card,.is-style-mh-card) .mh-body > p:not(.mh-more) { display: none; }
+  :is(.mh-card,.is-style-mh-card) .mh-body > p:not(.mh-more):not(.mh-sub) { display: none; }
   :is(.mh-card,.is-style-mh-card) .mh-body { padding: .75rem .8rem .9rem; }
   :is(.mh-card,.is-style-mh-card) h3 { font-size: 1rem !important; }
   .mh-two { grid-template-columns: 1fr; gap: 2rem; }
@@ -339,3 +339,13 @@ ol.mh-takeaways.wp-block-list { padding: 1.5rem !important; }
 .mh-why > .wp-block-group h2, .mh-why > .wp-block-group h3 { color: var(--sun); font-size: 1.3rem; line-height: 1.35; margin: 0 0 .6rem; }
 .mh-why > .wp-block-group p { color: #fff; margin: 0; line-height: 1.6; }
 @media (max-width: 680px) { .mh-grid.mh-why { grid-template-columns: 1fr; } }
+
+/* Plain-English subtitle under a cause's Sanskrit name (cards and cause-page heroes). */
+p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: -.2rem 0 .5rem !important; }
+:is(.mh-hero,.is-style-mh-hero) p.mh-sub { font-size: .85rem; margin: -.4rem 0 .6rem !important; }
+/* Support the Foundation cards: Donate button sits at the bottom of each card. */
+.mh-foundation > .wp-block-group { display: flex; flex-direction: column; }
+.mh-foundation > .wp-block-group > * { flex: 0 0 auto; }
+.mh-foundation .mh-icon { margin-bottom: .4rem !important; }
+.mh-foundation .wp-block-buttons.mh-actions { margin-top: auto !important; padding-top: 1rem; justify-content: flex-start; }
+@media (max-width: 680px) { .mh-grid.mh-foundation { grid-template-columns: 1fr; } }
