@@ -411,10 +411,17 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-aj-bleed-img { position: absolute; inset: 0; margin: 0 !important; }
 .mh-aj-bleed-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
 .mh-aj-bleed-cols > .wp-block-column:last-child { display: flex; flex-direction: column; justify-content: center; padding-block: 3.5rem; text-align: left; }
-.mh-aj-bleed-cols > .wp-block-column:last-child p { max-width: none; margin: 0; opacity: 1; line-height: 1.5; }
+.mh-aj-bleed-cols > .wp-block-column:last-child p { max-width: none; margin: 0; opacity: 1; }
 @media (max-width: 781px) {
   .entry-content > .wp-block-group.alignfull.mh-aj-bleed { padding-inline: 0 !important; }
   .mh-aj-bleed-cols { gap: 0; min-height: 0; flex-direction: column; }
   .mh-aj-bleed-cols > .wp-block-column:first-child { height: 62vw; flex-basis: auto !important; }
   .mh-aj-bleed-cols > .wp-block-column:last-child { padding: 2rem var(--gutter) 2.5rem; text-align: center; }
+}
+
+/* About Acharya Ji on phones: the editor sizes (24px text, 36px headings) are for desktop; phones get 18px and 28px. */
+@media (max-width: 781px) {
+  .page-id-425 .entry-content p:not(.mh-num):not(.mh-lab):not(.mh-aj-kicker) { font-size: 18px !important; }
+  .page-id-425 .entry-content .mh-aj-pills p { font-size: .9rem !important; }
+  .page-id-425 .entry-content h2 { font-size: 28px !important; }
 }
