@@ -400,3 +400,6 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
   .mh-aj-row .mh-actions, .mh-aj-row.is-style-mh-cta .mh-actions, .mh-aj-row .mh-aj-pills { justify-content: center; }
   .mh-aj-quote { border-left: 0; padding-left: 0; }
 }
+
+/* Text selection: the theme highlights in brand brown, which disappears on brown bands and the footer. Use gold there. */
+:is(.mh-cta, .is-style-mh-cta, .mh-why, .mh-footer) ::selection { background-color: var(--sun); color: var(--brown-deep); }
