@@ -379,7 +379,7 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-aj-row h2 { margin-top: 0; }
 .mh-aj-img { margin: 0; }
 .mh-aj-img img { width: 100%; max-height: 30rem; object-fit: cover; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(46,33,24,.12); display: block; }
-.mh-aj-row.is-style-mh-section + .mh-aj-row.is-style-mh-section { border-top: 1px solid var(--rule); }
+:is(.mh-aj-row.is-style-mh-section, .mh-aj-bleed:not(.is-style-mh-cta)) + :is(.mh-aj-row.is-style-mh-section, .mh-aj-bleed:not(.is-style-mh-cta)) { border-top: 1px solid var(--rule); }
 .mh-aj-row.is-style-mh-cta { text-align: left; }
 .mh-aj-row.is-style-mh-cta p { max-width: none; margin-inline: 0; }
 .mh-aj-row.is-style-mh-cta .mh-actions { justify-content: flex-start; }
@@ -403,3 +403,18 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 
 /* Text selection: the theme highlights in brand brown, which disappears on brown bands and the footer. Use gold there. */
 :is(.mh-cta, .is-style-mh-cta, .mh-why, .mh-footer) ::selection { background-color: var(--sun); color: var(--brown-deep); }
+
+/* About Acharya Ji: brown band with a photo filling its full height beside the text (add mh-aj-bleed to the section). */
+.entry-content > .wp-block-group.alignfull.mh-aj-bleed { padding-block: 0 !important; }
+.mh-aj-bleed-cols { align-items: stretch !important; gap: 3.5rem; min-height: 28rem; margin: 0; flex-direction: row-reverse; }
+.mh-aj-bleed-cols > .wp-block-column:first-child { position: relative; overflow: hidden; flex: 0 0 58% !important; }
+.mh-aj-bleed-img { position: absolute; inset: 0; margin: 0 !important; }
+.mh-aj-bleed-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
+.mh-aj-bleed-cols > .wp-block-column:last-child { display: flex; flex-direction: column; justify-content: center; padding-block: 3.5rem; text-align: left; }
+.mh-aj-bleed-cols > .wp-block-column:last-child p { max-width: none; margin: 0; opacity: 1; line-height: 1.5; }
+@media (max-width: 781px) {
+  .entry-content > .wp-block-group.alignfull.mh-aj-bleed { padding-inline: 0 !important; }
+  .mh-aj-bleed-cols { gap: 0; min-height: 0; flex-direction: column; }
+  .mh-aj-bleed-cols > .wp-block-column:first-child { height: 62vw; flex-basis: auto !important; }
+  .mh-aj-bleed-cols > .wp-block-column:last-child { padding: 2rem var(--gutter) 2.5rem; text-align: center; }
+}
