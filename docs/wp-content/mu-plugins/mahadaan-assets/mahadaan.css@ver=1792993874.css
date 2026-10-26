@@ -349,3 +349,24 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-foundation .mh-icon { margin-bottom: .4rem !important; }
 .mh-foundation .wp-block-buttons.mh-actions { margin-top: auto !important; padding-top: 1rem; justify-content: flex-start; }
 @media (max-width: 680px) { .mh-grid.mh-foundation { grid-template-columns: 1fr; } }
+
+/* Antar Yog Foundation / Acharya ji section on Home: clean white section, photo filling its full height like the hero. */
+.entry-content > .wp-block-group.alignfull.mh-acharya { padding-block: 0 !important; }
+.mh-acharya:not(.is-style-mh-cta) { background: #fff; border-block: 1px solid var(--rule); }
+.mh-acharya-card { align-items: stretch !important; gap: 3rem; min-height: 30rem; margin: 0; }
+.mh-acharya-card > .wp-block-column { align-self: stretch !important; }
+.mh-acharya-card > .wp-block-column:first-child { position: relative; overflow: hidden; }
+.mh-acharya-img { position: absolute; inset: 0; margin: 0 !important; }
+.mh-acharya-img img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; display: block; }
+.mh-acharya-card > .wp-block-column:last-child { display: flex; flex-direction: column; justify-content: center; padding-block: 3.5rem; }
+.mh-motto { color: var(--accent); font-size: .95rem; margin: 1rem 0 1.4rem; }
+.mh-motto [lang="sa"] { font-size: 1.15rem; font-weight: 600; }
+.mh-acharya .mh-actions { justify-content: flex-start; }
+.mh-acharya.is-style-mh-cta .mh-actions { justify-content: center; }
+@media (max-width: 781px) {
+  .entry-content > .wp-block-group.alignfull.mh-acharya { padding-inline: 0 !important; }
+  .mh-acharya-card { gap: 0; min-height: 0; text-align: center; }
+  .mh-acharya-card > .wp-block-column:first-child { height: 60vw; flex-basis: auto !important; }
+  .mh-acharya-card > .wp-block-column:last-child { padding: 2rem var(--gutter) 2.5rem; }
+  .mh-acharya .mh-actions { justify-content: center; }
+}
