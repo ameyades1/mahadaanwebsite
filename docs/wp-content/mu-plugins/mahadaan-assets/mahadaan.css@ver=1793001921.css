@@ -360,7 +360,7 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-acharya-img img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; display: block; }
 .mh-acharya-card > .wp-block-column:last-child { display: flex; flex-direction: column; justify-content: center; padding-block: 3.5rem; }
 .mh-motto { color: var(--accent); font-size: .95rem; margin: 1rem 0 1.4rem; }
-.mh-motto [lang="sa"] { font-size: 1.15rem; font-weight: 600; }
+.mh-motto [lang="sa"] { font-size: 1.2em; font-weight: 600; }
 .mh-acharya .mh-actions { justify-content: flex-start; }
 .mh-acharya.is-style-mh-cta .mh-actions { justify-content: center; }
 @media (max-width: 781px) {
@@ -369,4 +369,34 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
   .mh-acharya-card > .wp-block-column:first-child { height: 60vw; flex-basis: auto !important; }
   .mh-acharya-card > .wp-block-column:last-child { padding: 2rem var(--gutter) 2.5rem; }
   .mh-acharya .mh-actions { justify-content: center; }
+}
+
+/* About Acharya Ji page: photo-and-text rows alternating sides, with brown bands between. */
+.mh-aj-kicker { font-family: var(--sans); font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin: 0 0 .4rem !important; }
+.mh-aj-hero .mh-portrait .wp-block-image img { object-position: 50% 12%; }
+.mh-aj-row .mh-aj-cols { max-width: 72rem; margin: 0 auto; gap: 3.5rem; }
+.mh-aj-flip .mh-aj-cols { flex-direction: row-reverse; }
+.mh-aj-row h2 { margin-top: 0; }
+.mh-aj-img { margin: 0; }
+.mh-aj-img img { width: 100%; max-height: 30rem; object-fit: cover; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(46,33,24,.12); display: block; }
+.mh-aj-row.is-style-mh-section + .mh-aj-row.is-style-mh-section { border-top: 1px solid var(--rule); }
+.mh-aj-row.is-style-mh-cta { text-align: left; }
+.mh-aj-row.is-style-mh-cta p { max-width: none; margin-inline: 0; }
+.mh-aj-row.is-style-mh-cta .mh-actions { justify-content: flex-start; }
+.is-style-mh-cta .mh-aj-kicker { color: var(--sun); }
+.mh-aj-statement { max-width: 54rem !important; line-height: 1.5; }
+.is-style-mh-cta .mh-stats { max-width: 60rem; margin: 2.5rem auto 0; }
+.mh-aj-band > * { max-width: 46rem !important; margin-left: auto !important; margin-right: auto !important; text-align: center; }
+.is-style-mh-cta .mh-stat .mh-num { color: #fff; }
+.is-style-mh-cta .mh-stat .mh-lab { color: rgba(255,255,255,.8); }
+.mh-aj-pills { display: flex !important; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 1.5rem; }
+.mh-aj-band .mh-aj-pills { justify-content: center; margin-bottom: 1.5rem !important; }
+.mh-aj-pills p { margin: 0 !important; padding: .4rem 1rem; border-radius: 999px; font-size: .9rem; font-weight: 500; border: 1px solid rgba(255,255,255,.45); color: #fff; opacity: 1 !important; max-width: none !important; }
+.mh-aj-quote { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--sun); border-left: 3px solid var(--sun); padding-left: 1rem; margin: 1.5rem 0 !important; }
+@media (max-width: 781px) {
+  .mh-aj-flip .mh-aj-cols { flex-direction: column; }
+  .mh-aj-row .mh-aj-cols { gap: 1.5rem; }
+  .mh-aj-row, .mh-aj-row.is-style-mh-cta { text-align: center; }
+  .mh-aj-row .mh-actions, .mh-aj-row.is-style-mh-cta .mh-actions, .mh-aj-row .mh-aj-pills { justify-content: center; }
+  .mh-aj-quote { border-left: 0; padding-left: 0; }
 }
