@@ -427,3 +427,20 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
   .page-id-425 .entry-content h2 { font-size: 28px !important; }
 }
 .mh-aj-bleed-cols h2 { margin: 0 0 1rem; }
+
+/* Home "Join Us": video testimonial cards that open on YouTube. */
+.mh-video-grid { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 72rem; margin: 2rem auto 2.5rem !important; text-align: left; }
+.mh-video-card { display: flex; flex-direction: column; margin: 0 !important; }
+.mh-video-thumb { margin: 0 !important; }
+.mh-video-thumb a { position: relative; display: block; }
+.mh-video-thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; transition: filter .2s; }
+.mh-video-thumb a::after { content: ""; position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%;
+  background: var(--sun) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232e2118' d='M8 5v14l11-7z'/%3E%3C/svg%3E") 55% 50% / 28px no-repeat;
+  box-shadow: 0 4px 14px rgba(0,0,0,.3); transition: transform .2s; }
+.mh-video-thumb a:hover img { filter: brightness(.85); }
+.mh-video-thumb a:hover::after { transform: scale(1.08); }
+.mh-video-quote { font-family: var(--serif); font-style: italic; font-size: 1.1rem; line-height: 1.6; color: var(--ink-strong); margin: 0 !important; padding: 1.2rem 1.4rem 1.5rem; }
+.mh-video-quote::before { content: "❝"; display: block; font-style: normal; font-size: 1.6rem; line-height: 1; color: var(--gold); margin-bottom: .35rem; }
+@media (max-width: 781px) {
+  .mh-video-grid { grid-template-columns: 1fr; gap: 1rem; }
+}
