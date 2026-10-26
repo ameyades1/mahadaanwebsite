@@ -444,3 +444,8 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 @media (max-width: 781px) {
   .mh-video-grid { grid-template-columns: 1fr; gap: 1rem; }
 }
+
+/* Home: Gita quote beside the Sanyasi Seva photo (shares the mh-acharya-card layout) */
+.mh-gita .mh-acharya-card > .wp-block-column:last-child { padding-inline-end: var(--gutter); }
+.mh-gita .mh-actions { justify-content: center; }
+.mh-gita .mh-acharya-img img { object-position: center; }
