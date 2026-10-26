@@ -378,7 +378,8 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-aj-flip .mh-aj-cols { flex-direction: row-reverse; }
 .mh-aj-row h2 { margin-top: 0; }
 .mh-aj-img { margin: 0; }
-.mh-aj-img img { width: 100%; max-height: 30rem; object-fit: cover; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(46,33,24,.12); display: block; }
+/* Photos keep their natural shape (no cropping) so no detail is lost. */
+.mh-aj-img img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(46,33,24,.12); display: block; }
 :is(.mh-aj-row.is-style-mh-section, .mh-aj-bleed:not(.is-style-mh-cta)) + :is(.mh-aj-row.is-style-mh-section, .mh-aj-bleed:not(.is-style-mh-cta)) { border-top: 1px solid var(--rule); }
 .mh-aj-row.is-style-mh-cta { text-align: left; }
 .mh-aj-row.is-style-mh-cta p { max-width: none; margin-inline: 0; }
