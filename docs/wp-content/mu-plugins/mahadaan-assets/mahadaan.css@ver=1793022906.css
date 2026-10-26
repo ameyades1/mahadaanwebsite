@@ -117,7 +117,7 @@ a:is(.mh-card,.is-style-mh-card):hover { transform: translateY(-3px); box-shadow
 :is(.mh-cta,.is-style-mh-cta) { background: var(--brown); color: #fff; text-align: center; padding: 3rem var(--gutter);
   }
 :is(.mh-cta,.is-style-mh-cta) h2 { color: #fff !important; font-size: 1.7rem; margin: 0 0 .5rem; }
-:is(.mh-cta,.is-style-mh-cta) p { opacity: .88; max-width: 34rem; margin: 0 auto 1.5rem; }
+:is(.mh-cta,.is-style-mh-cta) p { opacity: .88; max-width: 54rem; margin: 0 auto 1.5rem; }  /* same width for every brown-band paragraph */
 :is(.mh-cta,.is-style-mh-cta) p.has-large-font-size, :is(.mh-cta,.is-style-mh-cta) p.mh-wide { max-width: 54rem; }
 :is(.mh-cta,.is-style-mh-cta) p.mh-medium { max-width: 44rem; }
 :is(.mh-cta,.is-style-mh-cta) .mh-btn, :is(.mh-cta,.is-style-mh-cta) .wp-block-button__link { background: var(--sun); color: var(--brown-deep) !important; border-color: var(--sun); }
