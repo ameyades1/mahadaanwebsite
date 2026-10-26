@@ -414,8 +414,8 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-aj-bleed-cols > .wp-block-column:last-child p { max-width: none; margin: 0; opacity: 1; }
 @media (max-width: 781px) {
   .entry-content > .wp-block-group.alignfull.mh-aj-bleed { padding-inline: 0 !important; }
-  .mh-aj-bleed-cols { gap: 0; min-height: 0; flex-direction: column; }
-  .mh-aj-bleed-cols > .wp-block-column:first-child { height: 62vw; flex-basis: auto !important; }
+  .mh-aj-bleed-cols { gap: 0; min-height: 0; flex-direction: row; }
+  .mh-aj-bleed-cols > .wp-block-column:first-child { height: 62vw; flex: none !important; }
   .mh-aj-bleed-cols > .wp-block-column:last-child { padding: 2rem var(--gutter) 2.5rem; text-align: center; }
 }
 
