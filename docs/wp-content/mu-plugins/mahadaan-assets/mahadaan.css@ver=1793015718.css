@@ -425,3 +425,4 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
   .page-id-425 .entry-content .mh-aj-pills p { font-size: .9rem !important; }
   .page-id-425 .entry-content h2 { font-size: 28px !important; }
 }
+.mh-aj-bleed-cols h2 { margin: 0 0 1rem; }
