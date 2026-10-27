@@ -493,3 +493,11 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
 .mh-clean .wp-block-button__link { font-size: 1rem; }
 @media (max-width: 760px) { .mh-clean h2.wp-block-heading, .mh-clean h1 { font-size: 30px !important; } .mh-clean :is(p, li) { font-size: 20px !important; } }
 .mh-clean h1.wp-block-heading { font-size: 36px !important; }
+
+/* Support the Foundation: photo cards, left-aligned, smaller text than the clean 24px */
+.mh-foundation .is-style-mh-card { padding: 0; }
+.mh-foundation .mh-cardimg { aspect-ratio: 4 / 3 !important; }
+.mh-foundation .mh-body { text-align: left !important; padding: 1.25rem 1.25rem 1.5rem !important; }
+.mh-clean .mh-foundation .mh-body h3.wp-block-heading { font-size: 1.25rem !important; }
+.mh-clean .mh-foundation .mh-body p { font-size: 1.05rem !important; line-height: 1.55; flex: 0 !important; }
+.mh-foundation .mh-body { flex: 1 !important; display: flex; flex-direction: column; } .mh-foundation .mh-body .mh-actions { margin-top: auto !important; }
