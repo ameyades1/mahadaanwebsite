@@ -449,3 +449,25 @@ p.mh-sub { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter
 .mh-gita .mh-acharya-card > .wp-block-column:last-child { padding-inline-end: var(--gutter); }
 .mh-gita .mh-actions { justify-content: center; }
 .mh-gita .mh-acharya-img img { object-position: center; }
+
+/* Cause pages (designs in prompts/designs) */
+.mh-cause-hero h1 { margin: .25rem 0 .5rem; }
+.mh-cause-promise { font-size: 1.3rem; color: var(--ink-strong); margin: 0 0 .5rem; }
+.mh-cause-hero .mh-lede { margin: 0 0 1.75rem; }
+.mh-cause-prose { text-align: left; }
+.mh-cause-quote { max-width: 40rem; margin: 2.25rem auto 0; padding-top: 2rem; border-top: 1px solid var(--rule); }
+.mh-cause-quote p { margin: 0 0 .5rem; }
+.mh-cause-sa { font-size: 1.2rem; color: var(--ink-strong); }
+.mh-cause-en { font-family: var(--serif); font-style: italic; }
+.mh-cause-cite { color: var(--muted); font-size: .9rem; }
+.mh-grid .is-style-mh-card.plain { text-align: left; }
+.mh-grid .is-style-mh-card.plain p { flex: 0; margin-bottom: .35rem; }
+p.mh-cause-amt { color: var(--accent); font-weight: 500; }
+.mh-cause-bless { list-style: none; padding: 0; max-width: 40rem; margin: 0 auto; }
+.mh-cause-bless li { padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.mh-cause-bless li:last-child { border: 0; }
+.mh-cause-bless li::before { content: '❁'; color: var(--gold); margin-right: .75rem; }
+.mh-cause-note { color: var(--muted); margin-top: 2rem; }
+@media (max-width: 760px) { .mh-cause-hero .mh-actions { justify-content: center; } }
+.mh-cause-hero .mh-actions { justify-content: flex-start; }
+.entry-content .mh-cause-bless { margin-inline: auto !important; text-align: left; }
