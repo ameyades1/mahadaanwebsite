@@ -501,3 +501,13 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
 .mh-clean .mh-foundation .mh-body h3.wp-block-heading { font-size: 1.25rem !important; }
 .mh-clean .mh-foundation .mh-body p { font-size: 1.05rem !important; line-height: 1.55; flex: 0 !important; }
 .mh-foundation .mh-body { flex: 1 !important; display: flex; flex-direction: column; } .mh-foundation .mh-body .mh-actions { margin-top: auto !important; }
+
+/* Phones: keep stacked photo and text close together (was ~73px on Home/cause pages, ~42px on About Acharya Ji) */
+@media (max-width: 781px) {
+  .mh-acharya-card.wp-block-columns { gap: 0 !important; row-gap: 0 !important; }
+  .mh-acharya-card > .wp-block-column { margin: 0 !important; }
+  .mh-acharya-card > .wp-block-column:last-child { padding-top: 1.5rem !important; }
+  .mh-aj-row .wp-block-columns { gap: 0 !important; row-gap: 0 !important; }
+  .mh-aj-row .wp-block-columns > .wp-block-column { margin: 0 !important; }
+  .mh-aj-row .wp-block-columns > .wp-block-column:has(h2, h3, p) { padding-top: 1.5rem; }
+}
