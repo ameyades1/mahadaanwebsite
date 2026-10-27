@@ -522,3 +522,4 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
   .mh-support-split .mh-acharya-card { flex-direction: row-reverse; }
   .mh-support-split .mh-acharya-card > .wp-block-column:last-child { padding-inline: var(--gutter) 0 !important; }
 }
+.mh-clean.mh-support-split { border-top: 1px solid var(--rule) !important; }
