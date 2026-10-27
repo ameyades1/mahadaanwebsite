@@ -523,3 +523,6 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
   .mh-support-split .mh-acharya-card > .wp-block-column:last-child { padding-inline: var(--gutter) 0 !important; }
 }
 .mh-clean.mh-support-split { border-top: 1px solid var(--rule) !important; }
+/* Causes: keep the intro heading close to the cards (was ~110px apart) */
+.page-id-8 .entry-content > .is-style-mh-hero.mh-clean { padding-bottom: 1.5rem !important; }
+.page-id-8 .entry-content > .is-style-mh-hero.mh-clean + .is-style-mh-section { padding-top: 0 !important; }
