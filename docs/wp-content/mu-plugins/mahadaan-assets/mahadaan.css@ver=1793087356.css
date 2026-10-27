@@ -511,3 +511,15 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
   .mh-aj-row .wp-block-columns > .wp-block-column { margin: 0 !important; }
   .mh-aj-row .wp-block-columns > .wp-block-column:has(h2, h3, p) { padding-top: 1.5rem; }
 }
+
+/* Home: full-width Support the Foundation band, photo behind a dark tint */
+.entry-content > .mh-support-band { position: relative; overflow: hidden; display: grid; place-items: center; min-height: 30rem; padding: 5rem var(--gutter) !important; text-align: center; color: #fff; }
+.mh-support-band .mh-band-bg { position: absolute !important; inset: 0; margin: 0 !important; z-index: 0; }
+.mh-support-band .mh-band-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.mh-support-band::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(rgba(20,12,6,.55), rgba(20,12,6,.72)); }
+.mh-support-band .mh-band-inner { position: relative; z-index: 2; max-width: 46rem; margin: 0 auto; text-shadow: 0 1px 12px rgba(0,0,0,.45); }
+.mh-support-band p.mh-band-quote { font-family: var(--heading); font-style: italic; font-weight: 500; font-size: clamp(1.9rem, 4.2vw, 2.9rem); line-height: 1.25; letter-spacing: -.02em; color: #fff; margin: 0 0 1rem; }
+.mh-support-band p.mh-band-text { font-size: 1.3rem; line-height: 1.55; color: #fff; margin: 0 auto 2rem; max-width: 38rem; }
+.mh-support-band .mh-actions { justify-content: center; }
+.mh-support-band .wp-block-button__link { background: var(--sun); color: var(--brown-deep) !important; border-color: var(--sun); text-shadow: none; }
+@media (max-width: 781px) { .entry-content > .mh-support-band { min-height: 24rem; padding: 3.5rem 1.25rem !important; } .mh-support-band p.mh-band-text { font-size: 1.1rem; } }
