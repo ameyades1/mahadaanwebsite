@@ -514,7 +514,11 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
 
 /* Home: Support the Foundation as a clean split (option B) */
 .mh-support-split .mh-acharya-card > .wp-block-column:last-child { text-align: left; }
-.mh-support-split p.mh-band-quote { font-family: var(--heading); font-style: italic; font-weight: 500; font-size: clamp(1.8rem, 3.2vw, 2.4rem) !important; line-height: 1.3; letter-spacing: -.02em; color: #000 !important; margin: 0 0 1rem; }
+.mh-support-split p.mh-band-quote { font-family: var(--heading); font-style: normal; font-weight: 500; font-size: clamp(1.8rem, 3.2vw, 2.4rem) !important; line-height: 1.3; letter-spacing: -.02em; color: #000 !important; margin: 0 0 1rem; }
 .mh-support-split p.mh-band-text { font-size: 24px !important; line-height: 1.5; color: #000 !important; margin: 0 0 1.75rem; }
 .mh-support-split .mh-actions { justify-content: flex-start !important; }
 @media (max-width: 781px) { .mh-support-split .mh-acharya-card > .wp-block-column:last-child { text-align: center; } .mh-support-split .mh-actions { justify-content: center !important; } .mh-support-split p.mh-band-text { font-size: 20px !important; } }
+@media (min-width: 782px) {
+  .mh-support-split .mh-acharya-card { flex-direction: row-reverse; }
+  .mh-support-split .mh-acharya-card > .wp-block-column:last-child { padding-inline: var(--gutter) 0 !important; }
+}
