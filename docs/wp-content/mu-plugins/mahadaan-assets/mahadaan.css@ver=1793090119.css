@@ -526,3 +526,12 @@ p.mh-cause-amt { color: var(--accent); font-weight: 500; }
 /* Causes: keep the intro heading close to the cards (was ~110px apart) */
 .page-id-8 .entry-content > .is-style-mh-hero.mh-clean { padding-bottom: 1.5rem !important; }
 .page-id-8 .entry-content > .is-style-mh-hero.mh-clean + .is-style-mh-section { padding-top: 0 !important; }
+
+/* Phones: type scale (body 18px on clean pages, Home line spacing 1.5, card titles 20px, card text 15px, Home/About hero 40px) */
+@media (max-width: 781px) {
+  .mh-clean :is(p, li) { font-size: 18px !important; }
+  .home .entry-content :is(p, li) { line-height: 1.5 !important; }
+  :is(.mh-card, .is-style-mh-card) h3, .mh-clean :is(.mh-card, .is-style-mh-card) h3.wp-block-heading, .mh-clean .mh-foundation .mh-body h3.wp-block-heading { font-size: 20px !important; }
+  :is(.mh-card, .is-style-mh-card) p, .mh-clean :is(.mh-card, .is-style-mh-card) p, .mh-clean .mh-foundation .mh-body p, :is(.mh-card, .is-style-mh-card) .mh-body > p:not(.mh-more):not(.mh-sub) { font-size: 15px !important; }
+  :is(.home .mh-hero-bleed, .page-id-425 .mh-aj-hero) h1 { font-size: 40px !important; }
+}
